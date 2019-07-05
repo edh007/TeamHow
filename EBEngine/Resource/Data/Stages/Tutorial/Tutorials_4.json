@@ -1,0 +1,477 @@
+{
+  "Stage": [
+    {
+      "Background": [ 0, 0, 0, 0 ],
+      "Camera": [ 0, 0, 100, 0 ],
+      "BGM": "InGameBGM"
+    }
+  ],
+  "Object": [
+    {
+      "ArcheType": "PLAYER",
+      "Component": [
+        {
+          "key": "TRANSFORM",
+          "values": {
+            "Position": [ -400, -350, 1 ],
+            "Scale": [ 125, 100, 0 ],
+            "Rotation": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "ArcheType": "NONE",
+      "Logic": [
+        {
+          "key": "BASIC_CONTROL",
+          "values": { }
+        },
+        {
+          "key": "HUD",
+          "values": { }
+        },
+        {
+          "key": "PLAYER_FOV",
+          "values": { }
+        },
+        {
+          "key": "OUTER_WALL",
+          "values": { }
+        },
+        {
+          "key": "FADE",
+          "values": { }
+        },
+        {
+          "key": "GRADE",
+          "values": { "Kill": 3, "Time": 50.0, "Death": 3.0 }
+        },
+        {
+          "key": "PARTICLEMANAGER",
+          "values": { "ParticleType": "RUN" }
+        },
+        {
+          "key": "TUTORIAL",
+          "values": {
+            "Message": [
+              [
+                "Press SPACE to SLOW the Time!",
+                [ -352, 0 ],
+                "Manipulation_6"
+              ]
+            ]
+          }
+        },
+        {
+          "key": "NODESETTOR",
+          "values": {
+            "Node": [
+              [
+                [ 2, -1 ],
+                [ 384, -128 ]
+              ],
+              [
+                [ 2, -2 ],
+                [ 384, -288 ]
+              ],
+              [
+                [ 1, -2 ],
+                [ 224, -288 ]
+              ],
+              [
+                [ 0, -2 ],
+                [ -448, -288 ]
+              ],
+              [
+                [ 0, 2 ],
+                [ 384, 256 ]
+              ],
+              [
+                [ -1, 2 ],
+                [ -256, 256 ]
+              ],
+              [
+                [ -2, 2 ],
+                [ -416, 256 ]
+              ],
+              [
+                [ -2, 1 ],
+                [ -416, 128 ]
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ArcheType": "NONE",
+      "Logic": [
+        {
+          "key": "PARTICLEMANAGER",
+          "values": { "ParticleType": "PLAYER" }
+        }
+      ]
+    },
+    {
+      "ArcheType": "NONE",
+      "Logic": [
+        {
+          "key": "PARTICLEMANAGER",
+          "values": { "ParticleType": "PLAYER" }
+        }
+      ]
+    },
+    {
+      "ArcheType": "NONE",
+      "Logic": [
+        {
+          "key": "PARTICLEMANAGER",
+          "values": { "ParticleType": "CHARGING" }
+        }
+      ]
+    },
+    {
+      "ArcheType": "NONE",
+      "Logic": [
+        {
+          "key": "PARTICLEMANAGER",
+          "values": { "ParticleType": "CHARGESHOT" }
+        }
+      ]
+    },
+    {
+      "ArcheType": "NONE",
+      "Component": [
+        {
+          "key": "TRANSFORM",
+          "values": {
+            "Position": [ 0, 0, 1 ],
+            "Scale": [ 1920, 1440, 0 ],
+            "Rotation": 0.0
+          }
+        },
+        {
+          "key": "SPRITE",
+          "values": {
+            "Rotation": 0.0,
+            "Texture": "Military_Background"
+          }
+        }
+      ]
+    },
+    { "ArcheType": "FLOOR" },
+    {
+      "ArcheType": "TARGET",
+      "Component": [
+        {
+          "key": "TRANSFORM",
+          "values": {
+            "Position": [ -352, 0, 0 ],
+            "Scale": [ 50, 75, 0 ],
+            "Rotation": 0.0
+          }
+        },
+        {
+          "key": "SPRITE",
+          "values": {
+            "Rotation": 0.0,
+            "Texture": "Analog"
+          }
+        }
+      ]
+    },
+    {
+      "ArcheType": "DOOR",
+      "Component": [
+        {
+          "key": "TRANSFORM",
+          "values": {
+            "Position": [ 448, 352, 0 ],
+            "Scale": [ 50, 50, 0 ],
+            "Rotation": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "ArcheType": "GAMEOVER",
+      "Logic": [
+        {
+          "key": "GAMEOVER",
+          "values": {
+            "ShowTime": 7,
+            "Stage": "Tutorials_5"
+          }
+        }
+      ]
+    },
+    {
+      "ArcheType": "TURRET",
+      "Component": [
+        {
+          "key": "TRANSFORM",
+          "values": {
+            "Position": [ -416, 352, 0 ],
+            "Scale": [ 50, 50, 0 ],
+            "Rotation": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "ArcheType": "TURRET",
+      "Component": [
+        {
+          "key": "TRANSFORM",
+          "values": {
+            "Position": [ -352, 352, 0 ],
+            "Scale": [ 50, 50, 0 ],
+            "Rotation": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "ArcheType": "TURRET",
+      "Component": [
+        {
+          "key": "TRANSFORM",
+          "values": {
+            "Position": [ -288, 352, 0 ],
+            "Scale": [ 50, 50, 0 ],
+            "Rotation": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "ArcheType": "TURRET",
+      "Component": [
+        {
+          "key": "TRANSFORM",
+          "values": {
+            "Position": [ -224, 352, 0 ],
+            "Scale": [ 50, 50, 0 ],
+            "Rotation": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "ArcheType": "TURRET",
+      "Component": [
+        {
+          "key": "TRANSFORM",
+          "values": {
+            "Position": [ -160, 352, 0 ],
+            "Scale": [ 50, 50, 0 ],
+            "Rotation": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "ArcheType": "TURRET",
+      "Component": [
+        {
+          "key": "TRANSFORM",
+          "values": {
+            "Position": [ -96, 352, 0 ],
+            "Scale": [ 50, 50, 0 ],
+            "Rotation": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "ArcheType": "TURRET",
+      "Component": [
+        {
+          "key": "TRANSFORM",
+          "values": {
+            "Position": [ -32, 352, 0 ],
+            "Scale": [ 50, 50, 0 ],
+            "Rotation": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "ArcheType": "TURRET",
+      "Component": [
+        {
+          "key": "TRANSFORM",
+          "values": {
+            "Position": [ 32, 352, 0 ],
+            "Scale": [ 50, 50, 0 ],
+            "Rotation": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "ArcheType": "TURRET",
+      "Component": [
+        {
+          "key": "TRANSFORM",
+          "values": {
+            "Position": [ 96, 352, 0 ],
+            "Scale": [ 50, 50, 0 ],
+            "Rotation": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "ArcheType": "TURRET",
+      "Component": [
+        {
+          "key": "TRANSFORM",
+          "values": {
+            "Position": [ 160, 352, 0 ],
+            "Scale": [ 50, 50, 0 ],
+            "Rotation": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "ArcheType": "TURRET",
+      "Component": [
+        {
+          "key": "TRANSFORM",
+          "values": {
+            "Position": [ 224, 352, 0 ],
+            "Scale": [ 50, 50, 0 ],
+            "Rotation": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "ArcheType": "TURRET",
+      "Component": [
+        {
+          "key": "TRANSFORM",
+          "values": {
+            "Position": [ 288, 352, 0 ],
+            "Scale": [ 50, 50, 0 ],
+            "Rotation": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "ArcheType": "TURRET",
+      "Component": [
+        {
+          "key": "TRANSFORM",
+          "values": {
+            "Position": [ 352, 352, 0 ],
+            "Scale": [ 50, 50, 0 ],
+            "Rotation": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "ArcheType": "WALL",
+      "Component": [
+        {
+          "key": "TRANSFORM",
+          "values": {
+            "Position": [ -128, -224, 0 ],
+            "Scale": [ 768, 32, 0 ],
+            "Rotation": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "ArcheType": "WALL",
+      "Component": [
+        {
+          "key": "TRANSFORM",
+          "values": {
+            "Position": [ 128, 128, 0 ],
+            "Scale": [ 768, 32, 0 ],
+            "Rotation": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "ArcheType": "ENEMY",
+      "Component": [
+        {
+          "key": "TRANSFORM",
+          "values": {
+            "Position": [ 320, -288, 0 ],
+            "Scale": [ 125, 100, 0 ],
+            "Rotation": 0.0
+          }
+        }
+      ],
+      "Logic": [
+        {
+          "key": "ENEMY",
+          "values": {
+            "EnemyType": "NORMAL",
+            "PatrolType": "SHUTTLE",
+            "Speed": 250,
+            "Point": [ ]
+          }
+        }
+      ]
+    },
+    {
+      "ArcheType": "ENEMY",
+      "Component": [
+        {
+          "key": "TRANSFORM",
+          "values": {
+            "Position": [ 416, 256, 0 ],
+            "Scale": [ 125, 100, 0 ],
+            "Rotation": 180.0
+          }
+        }
+      ],
+      "Logic": [
+        {
+          "key": "ENEMY",
+          "values": {
+            "EnemyType": "NORMAL",
+            "PatrolType": "SHUTTLE",
+            "Speed": 250,
+            "Point": [ ]
+          }
+        }
+      ]
+    },
+    {
+      "ArcheType": "ENEMY",
+      "Component": [
+        {
+          "key": "TRANSFORM",
+          "values": {
+            "Position": [ 0, -32, 0 ],
+            "Scale": [ 125, 100, 0 ],
+            "Rotation": 0.0
+          }
+        }
+      ],
+      "Logic": [
+        {
+          "key": "ENEMY",
+          "values": {
+            "EnemyType": "NORMAL",
+            "PatrolType": "SHUTTLE",
+            "Speed": 250,
+            "Point": [ ]
+          }
+        }
+      ]
+    }
+  ]
+}

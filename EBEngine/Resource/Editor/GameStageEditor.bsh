@@ -1,0 +1,221 @@
+#!/bin/bash
+
+MakeNewStage()
+{
+  touch $3.h
+  hFile_Contents $1 $2 $3 > $3.h
+  
+  touch $3.cpp
+  CppFile_Contents $1 $2 $3 > $3.cpp
+  
+  touch $3.json
+  JsonFile_Contents > $3.json
+}
+
+hFile_Contents()
+{
+  time=$(date +%Y-%m-%d)
+  capital=$(echo "${3}" | tr '[:lower:]' '[:upper:]')
+  echo $"/******************************************************************************/
+/*!
+\file   ${3}.h
+\author ${1}
+\par    email: ${2}
+\date   ${time}(yy/mm/dd)
+
+\description
+Contains ${3} stage class, builder class, and eaders of member functions.
+*/
+/******************************************************************************/
+#ifndef _${capital}_H_
+#define _${capital}_H_"$'\n'
+
+echo $'#include "../../Engine/StateManager/BaseStage.h"
+#include "../../Engine/StateManager/StageBuilder.h"\n'
+
+echo "class ${3} : public Stage
+{
+public:
+	${3}(GameStateManager* GSM = 0, ObjectManager* OBM = 0);
+
+	virtual ~${3}();
+	virtual void Load(void);
+	virtual void Init(void);
+	virtual void Update(float dt);
+	virtual void Shutdown(void);
+	virtual void Unload(void);
+
+private:
+
+};
+
+class ${3}Builder : public StageBuilder
+{
+public:
+	virtual ~${3}Builder(){};
+
+	Stage* BuildStage(GameStateManager* GSM, ObjectManager* OBM) {
+		return new ${3}(GSM, OBM);
+	}
+
+private:
+};
+
+#endif // _${capital}_H_"
+}
+
+CppFile_Contents()
+{
+  time=$(date +%Y/%m/%d)
+  capital=$(echo "${3}" | tr '[:lower:]' '[:upper:]')
+  echo $"/******************************************************************************/
+/*!
+\file   ${3}.cpp
+\author ${1}
+\par    email: ${2}
+\date   ${time}(yy/mm/dd)
+
+\description
+Contains ${3} stage class, builder class, and bodies of member functions.
+*/
+/******************************************************************************/"
+echo '#include "'"${3}"'.h"'
+echo '#include "../../Engine/ObjectManager/ObjectManager.h"'
+echo "/******************************************************************************/
+/*!
+\brief - ${3} constructor
+\param gsm - pointer to the gams state manager
+*/
+/******************************************************************************/
+${3}::${3}(GameStateManager* GSM, ObjectManager* OBM)
+{
+	m_GSM = GSM;
+	m_OBM = OBM;
+}
+
+/******************************************************************************/
+/*!
+\brief - ${3} destructor
+*/
+/******************************************************************************/
+${3}::~${3}()
+{}
+
+/******************************************************************************/
+/*!
+\brief - Load ${3}'s json data
+*/
+/******************************************************************************/
+void ${3}::Load(void)
+{
+	//Bind basic systems
+	m_OBM->BindGameSystem();
+
+	// Load json data"
+echo '	m_OBM->LoadStageData("Resource/Data/Stages/'${3}'.json");'
+echo "}
+
+/******************************************************************************/
+/*!
+\brief - Initialize ${3}'s info
+*/
+/******************************************************************************/
+void ${3}::Init(void)
+{
+	// Init basic systems
+	m_OBM->InitGameSystem();
+	
+	// Start timer of this stage
+	m_time.StartTime();
+}
+/******************************************************************************/
+/*!
+\brief - Update ${3}'s info
+\param dt - delta time
+*/
+/******************************************************************************/
+void ${3}::Update(float dt)
+{
+	// Update basic systems
+	m_OBM->UpdateGameSystem(dt);
+}
+
+/******************************************************************************/
+/*!
+\brief - Shutdown ${3}'s info
+*/
+/******************************************************************************/
+void ${3}::Shutdown(void)
+{
+	// Shutdown basic systems
+	m_OBM->ShutdownGameSystem();
+}
+
+/******************************************************************************/
+/*!
+\brief - Unload ${3}'s json data
+*/
+/******************************************************************************/
+void ${3}::Unload(void)
+{
+	// Unload stage data
+	m_OBM->UnloadStageData();
+}"
+
+}
+
+JsonFile_Contents()
+{
+
+echo $'{
+	"Stage" : [
+		{
+			"Background" : [ 0, 0, 0, 0 ],
+			"Camera" : [0, 0, 100, 0 ]
+		}
+	],
+	
+	"Object" : [
+
+	]
+}'
+}
+
+valid=0
+
+#echo Type author email stage_name...
+
+if [ "$1" != "" ] 
+then
+  echo Author: $1
+  ((valid++))
+else
+  echo Invalid user name!!
+fi
+
+if [ "$2" != "" ] 
+then
+  echo Mail: $2
+  ((valid++))
+else
+  echo Invalid mail!! 
+fi
+
+if [ "$3" != "" ] 
+then
+  echo Stage: $3
+  ((valid++))
+else
+  echo Invalid stage_name!!
+fi
+
+if [ ${valid} == 3 ]
+then
+  MakeNewStage $1 $2 $3
+  mv $3.cpp ../../Source/Game/GameStage
+  mv $3.h ../../Source/Game/GameStage
+  mv $3.json ../Data/Stages
+  echo Made a new game stage files successfully!
+else
+  echo Failed to make new game stage files...
+fi

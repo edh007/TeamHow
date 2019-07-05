@@ -1,0 +1,52 @@
+{
+	"Stage" : [
+		{
+			"Background" : [ 0, 0, 0, 0 ],
+			"Camera" : [0, 0, 100, 0 ]
+		}
+	],
+	
+	"Object" : [
+    {
+      "ArcheType": "MENU",
+      "Component": [
+        {
+          "key": "TRANSFORM",
+          "values": {
+            "Position": [ 325, -250, -10 ],
+            "Scale": [ 100, 50, 0 ]
+          }
+        },
+        {
+          "key": "SPRITE",
+          "values": {
+            "Color": [ 0.2, 0.2, 0.2, 0.5 ],
+            "Texture": "rect"
+          }
+        },
+        {
+          "key": "RIGIDBODY",
+          "values": {
+            "Response": false,
+            "Move": false
+          }
+        }
+      ],
+      "Logic": [
+        {
+          "key": "MENUSELECT",
+          "values": { "Content": "BACK" }
+        }
+      ]
+    },
+    {
+      "ArcheType": "NONE",
+      "Logic": [
+        {
+          "key": "HOWTOPLAY",
+          "values": { }
+        }
+      ]
+    }
+	]
+}

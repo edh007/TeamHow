@@ -1,0 +1,51 @@
+{
+  "ArcheType": [
+    {
+      "Component": [
+        {
+          "key": "TRANSFORM",
+          "values": {
+            "Position": [ 0, 0, 0 ],
+            "Scale": [ 100, 100, 0 ]
+          }
+        },
+        {
+          "key": "SPRITE",
+          "values": {
+            "Color": [ 1, 1, 1, 1 ],
+            "Texture": "Radar",
+            "AniFrame": 4,
+            "AniSpeed" : 35,
+            "AniToggle" : true
+          }
+        },
+        {
+          "key": "RIGIDBODY",
+          "values": {
+            "Response": false,
+            "Shape": "BOX"
+          }
+        }
+      ],
+      "Logic": [
+        {
+          "key": "TRAP",
+          "values": {
+            "WaitingTime": 5,
+            "RunningTime": 5
+          }
+        },
+        {
+          "key": "SLOW",
+          "values": {   }
+        },
+        {
+          "key": "ALARM",
+          "values": {
+            "Speed": 120
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,168 @@
+{
+	"Stage" : [
+		{
+			"Background" : [ 0.0, 0.0, 0, 0 ],
+			"Camera" : [0, 0, 100, 0 ],
+      "Ordering": false,
+      "BGM" : "MenuBGM"
+		}
+	],
+	"Object" : [
+		{
+			"ArcheType" : "NONE",
+			"Logic" : [
+				{ "key" : "BASIC_CONTROL", "values" : {} }
+			]
+		},
+		{
+			"ArcheType" : "MENU",
+      "Component": [
+        {
+          "key": "TRANSFORM",
+          "values": {
+            "Position": [ -310, -135, -10 ],
+            "Scale": [ 100, 50, 0 ]
+          }
+        },
+        {
+          "key": "SPRITE",
+          "values": {
+            "Texture": "rect",
+            "Color": [ 0.2, 0.2, 0.2, 0.5 ]
+          }
+        },
+        {
+          "key": "RIGIDBODY",
+          "values": {
+            "Response": false,
+            "Move": false
+          }
+        }
+      ],
+      "Logic" : [
+          {
+            "key": "MENUSELECT",
+            "values": { "Content": "PLAY" }
+          }
+        ]
+		},
+    {
+      "ArcheType": "MENU",
+      "Component": [
+        {
+          "key": "TRANSFORM",
+          "values": {
+            "Position": [ -120, -135, -10 ],
+            "Scale": [ 200, 50, 0 ]
+          }
+        },
+        {
+          "key": "SPRITE",
+          "values": {
+            "Color": [ 0.2, 0.2, 0.2, 0.5 ],
+            "Texture": "rect"
+          }
+        },
+        {
+          "key": "RIGIDBODY",
+          "values": {
+            "Response": false,
+            "Move": false
+          }
+        }
+      ],
+      "Logic": [
+        {
+          "key": "MENUSELECT",
+          "values": { "Content": "OPTIONS" }
+        }
+      ]
+    },
+		{
+      "ArcheType": "NONE",
+      "Component": [
+        {
+          "key": "TRANSFORM",
+          "values": {
+            "Position": [ 0, 0, 0 ],
+            "Scale": [ 50, 50, 0 ]
+          }
+        }
+      ],
+			"Logic" : [
+        {
+          "key": "PARTICLEMANAGER",
+          "values": { "ParticleType": "NORMAL" }
+        }
+			]
+		},
+		{
+      "ArcheType": "MENU",
+      "Component": [
+        {
+          "key": "TRANSFORM",
+          "values": {
+            "Position": [ 95, -135, -10 ],
+            "Scale" : [175, 50, 0]
+          }
+        },
+        {
+          "key": "SPRITE",
+          "values": { 
+            "Color": [ 0.2, 0.2, 0.2, 0.5 ],
+            "Texture": "rect" 
+          }
+        },
+        {
+          "key": "RIGIDBODY",
+          "values": {
+            "Response": false,
+            "Move": false
+          }
+        }
+      ],
+      "Logic" : [
+          {
+            "key": "MENUSELECT",
+            "values": { "Content": "CREDITS" }
+          }
+        ]
+		},
+		{
+      "ArcheType": "MENU",
+      "Component": [
+        {
+          "key": "TRANSFORM",
+          "values": {
+            "Position": [ 305, -135, -10 ],
+            "Scale" : [100, 50, 0]
+          }
+        },
+        {
+          "key": "SPRITE",
+          "values": { 
+            "Color": [ 0.2, 0.2, 0.2, 0.5 ],
+            "Texture": "rect" 
+          }
+        },
+        {
+          "key": "RIGIDBODY",
+          "values": {
+            "Response": false,
+            "Move": false
+          }
+        }
+      ],
+      "Logic" : [
+          {
+            "key": "MENUSELECT",
+            "values": { "Content": "QUIT GAME" }
+          }
+        ]
+		},
+		{
+      "ArcheType": "NONE",
+			"Logic" : [	{ "key" : "MAINSCREEN", "values" : {} }	]
+		}
+  ]
+}

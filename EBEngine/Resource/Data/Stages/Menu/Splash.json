@@ -1,0 +1,28 @@
+{
+	"Stage" : [
+		{
+			"Background" : [ 0, 0, 0, 0 ],
+			"Camera" : [0, 0, 100, 0 ]
+		}
+	],
+	
+	"Object" : [
+    {
+      "ArcheType": "NONE",
+      "Component": [
+        {
+          "key": "TRANSFORM",
+          "values": { }
+        },
+        {
+          "key": "SPRITE",
+          "values": { "Texture": "DigiPen" }
+        }
+      ],
+				"Logic" : [
+				{ "key" : "SPLASH", "values" : {} },
+				{ "key" : "BASIC_CONTROL", "values" : {} }
+			]
+		}
+	]
+}

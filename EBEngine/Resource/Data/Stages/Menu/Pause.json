@@ -1,0 +1,234 @@
+{
+	"Stage" : [
+		{
+			"Background" : [ 0, 0, 0, 0 ],
+			"Camera" : [0, 0, 100, 0 ],
+			"Ordering" : false
+		}
+	],
+	"Object" : [
+    {
+      "ArcheType": "NONE",
+      "Logic": [
+        {
+          "key": "BASIC_CONTROL",
+          "values": { }
+        }
+      ]
+    },
+    {
+      "ArcheType": "MENU",
+      "Component": [
+        {
+          "key": "TRANSFORM",
+          "values": {
+            "Position": [ -205, -185, -10 ],
+            "Scale": [ 200, 50, 0 ]
+          }
+        },
+        {
+          "key": "SPRITE",
+          "values": {
+            "Color": [ 0.2, 0.2, 0.2, 0.5 ],
+            "Texture": "rect"
+          }
+        },
+        {
+          "key": "RIGIDBODY",
+          "values": {
+            "Response": false,
+            "Move": false
+          }
+        }
+      ],
+      "Logic": [
+        {
+          "key": "MENUSELECT",
+          "values": { "Content": "RESUME GAME" }
+        }
+      ]
+    },
+        {
+      "ArcheType": "MENU",
+      "Component": [
+        {
+          "key": "TRANSFORM",
+          "values": {
+            "Position": [ -5, -185, -10 ],
+            "Scale": [ 200, 50, 0 ]
+          }
+        },
+        {
+          "key": "SPRITE",
+          "values": {
+            "Color": [ 0.2, 0.2, 0.2, 0.5 ],
+            "Texture": "rect"
+          }
+        },
+        {
+          "key": "RIGIDBODY",
+          "values": {
+            "Response": false,
+            "Move": false
+          }
+        }
+      ],
+      "Logic": [
+        {
+          "key": "MENUSELECT",
+          "values": { "Content": "RESTART GAME" }
+        }
+      ]
+    },
+     {
+      "ArcheType": "MENU",
+      "Component": [
+        {
+          "key": "TRANSFORM",
+          "values": {
+            "Position": [ 195, -185, -10 ],
+            "Scale": [ 200, 50, 0 ]
+          }
+        },
+        {
+          "key": "SPRITE",
+          "values": {
+            "Color": [ 0.2, 0.2, 0.2, 0.5 ],
+            "Texture": "rect"
+          }
+        },
+        {
+          "key": "RIGIDBODY",
+          "values": {
+            "Response": false,
+            "Move": false
+          }
+        }
+      ],
+      "Logic": [
+        {
+          "key": "MENUSELECT",
+          "values": { "Content": "HOW TO PLAY" }
+        }
+      ]
+    },		
+    {
+      "ArcheType": "MENU",
+      "Component": [
+        {
+          "key": "TRANSFORM",
+          "values": {
+            "Position": [ -205, -255, -10 ],
+            "Scale": [ 200, 50, 0 ]
+          }
+        },
+        {
+          "key": "SPRITE",
+          "values": {
+            "Color": [ 0.2, 0.2, 0.2, 0.5 ],
+            "Texture": "rect"
+          }
+        },
+        {
+          "key": "RIGIDBODY",
+          "values": {
+            "Response": false,
+            "Move": false
+          }
+        }
+      ],
+      "Logic": [
+        {
+          "key": "MENUSELECT",
+          "values": { "Content": "GO TO MENU" }
+        }
+      ]
+    },		
+     {
+      "ArcheType": "MENU",
+      "Component": [
+        {
+          "key": "TRANSFORM",
+          "values": {
+            "Position": [ -5, -255, -10 ],
+            "Scale" : [175, 50, 0]
+          }
+        },
+        {
+          "key": "SPRITE",
+          "values": { 
+            "Color": [ 0.2, 0.2, 0.2, 0.5 ],
+            "Texture": "rect" 
+          }
+        },
+        {
+          "key": "RIGIDBODY",
+          "values": {
+            "Response": false,
+            "Move": false
+          }
+        }
+      ],
+      "Logic" : [
+          {
+            "key": "MENUSELECT",
+            "values": { "Content": "OPTIONS" }
+          }
+        ]
+		},
+    {
+      "ArcheType": "MENU",
+      "Component": [
+        {
+          "key": "TRANSFORM",
+          "values": {
+            "Position": [ 195, -255, -10 ],
+            "Scale" : [175, 50, 0]
+          }
+        },
+        {
+          "key": "SPRITE",
+          "values": { 
+            "Color": [ 0.2, 0.2, 0.2, 0.5 ],
+            "Texture": "rect" 
+          }
+        },
+        {
+          "key": "RIGIDBODY",
+          "values": {
+            "Response": false,
+            "Move": false
+          }
+        }
+      ],
+      "Logic" : [
+          {
+            "key": "MENUSELECT",
+            "values": { "Content": "QUIT GAME" }
+          }
+        ]
+		},
+    {
+      "ArcheType": "NONE",
+      "Component": [
+        {
+          "key": "TRANSFORM",
+          "values": {
+            "Position": [ 0, 0, 0 ],
+            "Scale": [ 50, 50, 0 ]
+          }
+        }
+      ],
+			"Logic" : [
+        {
+          "key": "PARTICLEMANAGER",
+          "values": { "ParticleType": "NORMAL" }
+        }
+			]
+		},
+		{
+      "ArcheType": "NONE",
+			"Logic" : [	{ "key" : "MAINSCREEN", "values" : {} }	]
+		}
+  ]
+}

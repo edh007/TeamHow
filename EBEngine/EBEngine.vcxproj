@@ -1,0 +1,483 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{9F207CD1-5537-4760-8465-EA9C27ED487E}</ProjectGuid>
+    <RootNamespace>EBEngine</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>$(SolutionDir)\EBEngine\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)\EBEngine\Lib;$(LibraryPath)</LibraryPath>
+    <TargetExt>.exe</TargetExt>
+    <TargetName>CaptainKorea</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>$(SolutionDir)\EBEngine\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)\EBEngine\Lib;$(LibraryPath)</LibraryPath>
+    <TargetExt>.exe</TargetExt>
+    <TargetName>CaptainKorea</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(SolutionDir)\EBEngine\Include\</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>$(SolutionDir)\EBEngine\Lib;$(LibraryPath)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opengl32.lib;glu32.lib;freetype26.lib;glew32.lib;XInput.lib;fmodex_vc.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+      <IgnoreSpecificDefaultLibraries>libc.lib;libcmt.lib;msvcrt.lib;libcd.lib;libcmtd.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <AdditionalOptions>/VERBOSE:LIB %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(SolutionDir)\EBEngine\Include\</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>opengl32.lib;glu32.lib;freetype26.lib;glew32.lib;XInput.lib;fmodex_vc.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)\EBEngine\Lib;$(LibraryPath)</AdditionalLibraryDirectories>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="Include\config\ftconfig.h" />
+    <ClInclude Include="Include\config\ftheader.h" />
+    <ClInclude Include="Include\config\ftmodule.h" />
+    <ClInclude Include="Include\config\ftoption.h" />
+    <ClInclude Include="Include\config\ftstdlib.h" />
+    <ClInclude Include="Include\FMOD\fmod.h" />
+    <ClInclude Include="Include\FMOD\fmod.hpp" />
+    <ClInclude Include="Include\FMOD\fmod_codec.h" />
+    <ClInclude Include="Include\FMOD\fmod_dsp.h" />
+    <ClInclude Include="Include\FMOD\fmod_errors.h" />
+    <ClInclude Include="Include\FMOD\fmod_memoryinfo.h" />
+    <ClInclude Include="Include\FMOD\fmod_output.h" />
+    <ClInclude Include="Include\freetype.h" />
+    <ClInclude Include="Include\ft2build.h" />
+    <ClInclude Include="Include\ftadvanc.h" />
+    <ClInclude Include="Include\ftautoh.h" />
+    <ClInclude Include="Include\ftbbox.h" />
+    <ClInclude Include="Include\ftbdf.h" />
+    <ClInclude Include="Include\ftbitmap.h" />
+    <ClInclude Include="Include\ftbzip2.h" />
+    <ClInclude Include="Include\ftcache.h" />
+    <ClInclude Include="Include\ftcffdrv.h" />
+    <ClInclude Include="Include\ftchapters.h" />
+    <ClInclude Include="Include\ftcid.h" />
+    <ClInclude Include="Include\fterrdef.h" />
+    <ClInclude Include="Include\fterrors.h" />
+    <ClInclude Include="Include\ftfntfmt.h" />
+    <ClInclude Include="Include\ftgasp.h" />
+    <ClInclude Include="Include\ftglyph.h" />
+    <ClInclude Include="Include\ftgxval.h" />
+    <ClInclude Include="Include\ftgzip.h" />
+    <ClInclude Include="Include\ftimage.h" />
+    <ClInclude Include="Include\ftincrem.h" />
+    <ClInclude Include="Include\ftlcdfil.h" />
+    <ClInclude Include="Include\ftlist.h" />
+    <ClInclude Include="Include\ftlzw.h" />
+    <ClInclude Include="Include\ftmac.h" />
+    <ClInclude Include="Include\ftmm.h" />
+    <ClInclude Include="Include\ftmodapi.h" />
+    <ClInclude Include="Include\ftmoderr.h" />
+    <ClInclude Include="Include\ftotval.h" />
+    <ClInclude Include="Include\ftoutln.h" />
+    <ClInclude Include="Include\ftpfr.h" />
+    <ClInclude Include="Include\ftrender.h" />
+    <ClInclude Include="Include\ftsizes.h" />
+    <ClInclude Include="Include\ftsnames.h" />
+    <ClInclude Include="Include\ftstroke.h" />
+    <ClInclude Include="Include\ftsynth.h" />
+    <ClInclude Include="Include\ftsystem.h" />
+    <ClInclude Include="Include\fttrigon.h" />
+    <ClInclude Include="Include\ftttdrv.h" />
+    <ClInclude Include="Include\fttypes.h" />
+    <ClInclude Include="Include\ftwinfnt.h" />
+    <ClInclude Include="Include\GL\gl.h" />
+    <ClInclude Include="Include\GL\glew.h" />
+    <ClInclude Include="Include\GL\glext.h" />
+    <ClInclude Include="Include\GL\glu.h" />
+    <ClInclude Include="Include\GL\glxew.h" />
+    <ClInclude Include="Include\GL\wglew.h" />
+    <ClInclude Include="Include\internal\autohint.h" />
+    <ClInclude Include="Include\internal\ftcalc.h" />
+    <ClInclude Include="Include\internal\ftdebug.h" />
+    <ClInclude Include="Include\internal\ftdriver.h" />
+    <ClInclude Include="Include\internal\ftgloadr.h" />
+    <ClInclude Include="Include\internal\ftmemory.h" />
+    <ClInclude Include="Include\internal\ftobjs.h" />
+    <ClInclude Include="Include\internal\ftpic.h" />
+    <ClInclude Include="Include\internal\ftrfork.h" />
+    <ClInclude Include="Include\internal\ftserv.h" />
+    <ClInclude Include="Include\internal\ftstream.h" />
+    <ClInclude Include="Include\internal\fttrace.h" />
+    <ClInclude Include="Include\internal\ftvalid.h" />
+    <ClInclude Include="Include\internal\internal.h" />
+    <ClInclude Include="Include\internal\psaux.h" />
+    <ClInclude Include="Include\internal\pshints.h" />
+    <ClInclude Include="Include\internal\services\svbdf.h" />
+    <ClInclude Include="Include\internal\services\svcid.h" />
+    <ClInclude Include="Include\internal\services\svfntfmt.h" />
+    <ClInclude Include="Include\internal\services\svgldict.h" />
+    <ClInclude Include="Include\internal\services\svgxval.h" />
+    <ClInclude Include="Include\internal\services\svkern.h" />
+    <ClInclude Include="Include\internal\services\svmm.h" />
+    <ClInclude Include="Include\internal\services\svotval.h" />
+    <ClInclude Include="Include\internal\services\svpfr.h" />
+    <ClInclude Include="Include\internal\services\svpostnm.h" />
+    <ClInclude Include="Include\internal\services\svprop.h" />
+    <ClInclude Include="Include\internal\services\svpscmap.h" />
+    <ClInclude Include="Include\internal\services\svpsinfo.h" />
+    <ClInclude Include="Include\internal\services\svsfnt.h" />
+    <ClInclude Include="Include\internal\services\svttcmap.h" />
+    <ClInclude Include="Include\internal\services\svtteng.h" />
+    <ClInclude Include="Include\internal\services\svttglyf.h" />
+    <ClInclude Include="Include\internal\services\svwinfnt.h" />
+    <ClInclude Include="Include\internal\sfnt.h" />
+    <ClInclude Include="Include\internal\t1types.h" />
+    <ClInclude Include="Include\internal\tttypes.h" />
+    <ClInclude Include="Include\json\json-forwards.h" />
+    <ClInclude Include="Include\json\json.h" />
+    <ClInclude Include="Include\LodePNG\lodepng.h" />
+    <ClInclude Include="Include\t1tables.h" />
+    <ClInclude Include="Include\ttnameid.h" />
+    <ClInclude Include="Include\tttables.h" />
+    <ClInclude Include="Include\tttags.h" />
+    <ClInclude Include="Include\ttunpat.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="Source\BaseData\ArcheTypes\ArcheType.h" />
+    <ClInclude Include="Source\BaseData\ArcheTypes\RegisterArcheTypes.h" />
+    <ClInclude Include="Source\BaseData\BaseEnigne.h" />
+    <ClInclude Include="Source\BaseData\Components\ComponentType.h" />
+    <ClInclude Include="Source\BaseData\Components\RegisterComponents.h" />
+    <ClInclude Include="Source\BaseData\GameData.h" />
+    <ClInclude Include="Source\BaseData\Logics\LogicType.h" />
+    <ClInclude Include="Source\BaseData\Logics\RegisterLogics.h" />
+    <ClInclude Include="Source\BaseData\Stages\RegisterStages.h" />
+    <ClInclude Include="Source\BaseData\Stages\StageType.h" />
+    <ClInclude Include="Source\Engine\App\Application.h" />
+    <ClInclude Include="Source\Engine\Component\Component.h" />
+    <ClInclude Include="Source\Engine\Component\ComponentBuilder.h" />
+    <ClInclude Include="Source\Engine\Component\ComponentFactory\ComponentFactory.h" />
+    <ClInclude Include="Source\Engine\GameSystem\Graphic\GraphicManager\GLManager.h" />
+    <ClInclude Include="Source\Engine\GameSystem\Graphic\Particle\Particle.h" />
+    <ClInclude Include="Source\Engine\GameSystem\Graphic\Scene\Scene.h" />
+    <ClInclude Include="Source\Engine\GameSystem\Graphic\Shader\Shader.h" />
+    <ClInclude Include="Source\Engine\GameSystem\Graphic\Sprite\Sprite.h" />
+    <ClInclude Include="Source\Engine\GameSystem\Graphic\Texture\Texture.h" />
+    <ClInclude Include="Source\Engine\GameSystem\Graphic\Text\Text.h" />
+    <ClInclude Include="Source\Engine\GameSystem\Logic\GameLogic\GameLogic.h" />
+    <ClInclude Include="Source\Engine\GameSystem\Logic\Logic.h" />
+    <ClInclude Include="Source\Engine\GameSystem\Logic\LogicBuilder.h" />
+    <ClInclude Include="Source\Engine\GameSystem\Logic\LogicFactory\LogicFactory.h" />
+    <ClInclude Include="Source\Engine\GameSystem\Physics\Node\Node.h" />
+    <ClInclude Include="Source\Engine\GameSystem\Physics\RigidBody\RigidBody.h" />
+    <ClInclude Include="Source\Engine\GameSystem\Physics\Transform\Transform.h" />
+    <ClInclude Include="Source\Engine\GameSystem\Physics\World\World.h" />
+    <ClInclude Include="Source\Engine\GameSystem\Sound\Audio\Audio.h" />
+    <ClInclude Include="Source\Engine\GameSystem\Sound\Sound.h" />
+    <ClInclude Include="Source\Engine\GameSystem\Sound\SoundManager\SoundManager.h" />
+    <ClInclude Include="Source\Engine\InputManager\InputManager.h" />
+    <ClInclude Include="Source\Engine\InputManager\XboxInput.h" />
+    <ClInclude Include="Source\Engine\ObjectManager\ObjectManager.h" />
+    <ClInclude Include="Source\Engine\ObjectManager\Object\Object.h" />
+    <ClInclude Include="Source\Engine\StateManager\BaseStage.h" />
+    <ClInclude Include="Source\Engine\StateManager\GameStateManager\GameStateManager.h" />
+    <ClInclude Include="Source\Engine\StateManager\StageBuilder.h" />
+    <ClInclude Include="Source\Engine\StateManager\StageFactory\StageFactory.h" />
+    <ClInclude Include="Source\Engine\Utilities\Converter.h" />
+    <ClInclude Include="Source\Engine\Utilities\Debug\Debug.h" />
+    <ClInclude Include="Source\Engine\Utilities\INI\iniReader.h" />
+    <ClInclude Include="Source\Engine\Utilities\INI\iniWritter.h" />
+    <ClInclude Include="Source\Engine\Utilities\Json\JsonParser.h" />
+    <ClInclude Include="Source\Engine\Utilities\Math\MathUtils.h" />
+    <ClInclude Include="Source\Engine\Utilities\Math\Matrix\Matrix2x2.h" />
+    <ClInclude Include="Source\Engine\Utilities\Math\Matrix\Matrix4x4.h" />
+    <ClInclude Include="Source\Engine\Utilities\Math\Vector\Vector2.h" />
+    <ClInclude Include="Source\Engine\Utilities\Math\Vector\Vector3.h" />
+    <ClInclude Include="Source\Engine\Utilities\Math\Vector\Vector4.h" />
+    <ClInclude Include="Source\Engine\Utilities\Random.h" />
+    <ClInclude Include="Source\Engine\Utilities\Time.h" />
+    <ClInclude Include="Source\Game\GameLogic\Basic\CutScene.h" />
+    <ClInclude Include="Source\Game\GameLogic\Environment\Chopper.h" />
+    <ClInclude Include="Source\Game\GameLogic\HUD\Grade.h" />
+    <ClInclude Include="Source\Game\GameLogic\Menus\Credit.h" />
+    <ClInclude Include="Source\Game\GameLogic\Menus\HowToPlayLogic.h" />
+    <ClInclude Include="Source\Game\GameLogic\Menus\Setting.h" />
+    <ClInclude Include="Source\Game\GameLogic\Environment\Fov.h" />
+    <ClInclude Include="Source\Game\GameLogic\HUD\Arrow.h" />
+    <ClInclude Include="Source\Game\GameLogic\Basic\BasicControl.h" />
+    <ClInclude Include="Source\Game\GameLogic\Basic\FadeScreen.h" />
+    <ClInclude Include="Source\Game\GameLogic\HUD\GameOver.h" />
+    <ClInclude Include="Source\Game\GameLogic\Menus\MainScreen.h" />
+    <ClInclude Include="Source\Game\GameLogic\Environment\NodeSettor.h" />
+    <ClInclude Include="Source\Game\GameLogic\Menus\Splash.h" />
+    <ClInclude Include="Source\Game\GameLogic\Player\Slow.h" />
+    <ClInclude Include="Source\Game\GameLogic\Trap\Alarm.h" />
+    <ClInclude Include="Source\Game\GameLogic\Tutorial\Tutorial.h" />
+    <ClInclude Include="Source\Game\GameLogic\Enemy\Damage.h" />
+    <ClInclude Include="Source\Game\GameLogic\Enemy\Enemy.h" />
+    <ClInclude Include="Source\Game\GameLogic\Environment\Door.h" />
+    <ClInclude Include="Source\Game\GameLogic\Environment\OuterWall.h" />
+    <ClInclude Include="Source\Game\GameLogic\HUD\HUD.h" />
+    <ClInclude Include="Source\Game\GameLogic\Menus\MenuSelect.h" />
+    <ClInclude Include="Source\Game\GameLogic\Items\Bullet.h" />
+    <ClInclude Include="Source\Game\GameLogic\Items\Target.h" />
+    <ClInclude Include="Source\Game\GameLogic\Particle\Normal.h" />
+    <ClInclude Include="Source\Game\GameLogic\Particle\ParticleManager.h" />
+    <ClInclude Include="Source\Game\GameLogic\Player\SuperPower.h" />
+    <ClInclude Include="Source\Game\GameLogic\Player\Player.h" />
+    <ClInclude Include="Source\Game\GameLogic\Player\Punch.h" />
+    <ClInclude Include="Source\Game\GameLogic\Trap\BasicTrap.h" />
+    <ClInclude Include="Source\Game\GameLogic\Trap\Laser.h" />
+    <ClInclude Include="Source\Game\GameLogic\Trap\Lightning.h" />
+    <ClInclude Include="Source\Game\GameLogic\Trap\Turret.h" />
+    <ClInclude Include="Source\Game\GameLogic\Trap\TurretTarget.h" />
+    <ClInclude Include="Source\Game\GameLogic\Trap\Web.h" />
+    <ClInclude Include="Source\Game\GameStage\CutScene\GameEnding.h" />
+    <ClInclude Include="Source\Game\GameStage\CutScene\GameIntro.h" />
+    <ClInclude Include="Source\Game\GameStage\InGame\LV5.h" />
+    <ClInclude Include="Source\Game\GameStage\Menus\CreditStage.h" />
+    <ClInclude Include="Source\Game\GameStage\InGame\LV1.h" />
+    <ClInclude Include="Source\Game\GameStage\InGame\LV2.h" />
+    <ClInclude Include="Source\Game\GameStage\InGame\LV3.h" />
+    <ClInclude Include="Source\Game\GameStage\InGame\LV4.h" />
+    <ClInclude Include="Source\Game\GameStage\Menus\HowToPlay.h" />
+    <ClInclude Include="Source\Game\GameStage\Menus\MainMenu.h" />
+    <ClInclude Include="Source\Game\GameStage\Menus\Pause.h" />
+    <ClInclude Include="Source\Game\GameStage\Menus\SettingStage.h" />
+    <ClInclude Include="Source\Game\GameStage\Menus\SplashStage.h" />
+    <ClInclude Include="Source\Game\GameStage\Tutorial\Tutorials_1.h" />
+    <ClInclude Include="Source\Game\GameStage\Tutorial\Tutorials_2.h" />
+    <ClInclude Include="Source\Game\GameStage\Tutorial\Tutorials_3.h" />
+    <ClInclude Include="Source\Game\GameStage\Tutorial\Tutorials_4.h" />
+    <ClInclude Include="Source\Game\GameStage\Tutorial\Tutorials_5.h" />
+    <ClInclude Include="Source\Game\GameStage\Tutorial\Tutorials_6.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Include\jsoncpp.cpp" />
+    <ClCompile Include="Include\LodePNG\lodepng.cpp" />
+    <ClCompile Include="Include\LodePNG\text.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Source\Engine\App\Application.cpp" />
+    <ClCompile Include="Source\Engine\Component\Component.cpp" />
+    <ClCompile Include="Source\Engine\Component\ComponentFactory\ComponentFactory.cpp" />
+    <ClCompile Include="Source\Engine\GameSystem\Graphic\GraphicManager\GLManager.cpp" />
+    <ClCompile Include="Source\Engine\GameSystem\Graphic\Particle\Particle.cpp" />
+    <ClCompile Include="Source\Engine\GameSystem\Graphic\Scene\Scene.cpp" />
+    <ClCompile Include="Source\Engine\GameSystem\Graphic\Shader\Shader.cpp" />
+    <ClCompile Include="Source\Engine\GameSystem\Graphic\Sprite\Sprite.cpp" />
+    <ClCompile Include="Source\Engine\GameSystem\Graphic\Texture\Texture.cpp" />
+    <ClCompile Include="Source\Engine\GameSystem\Graphic\Text\Text.cpp" />
+    <ClCompile Include="Source\Engine\GameSystem\Logic\GameLogic\GameLogic.cpp" />
+    <ClCompile Include="Source\Engine\GameSystem\Logic\Logic.cpp" />
+    <ClCompile Include="Source\Engine\GameSystem\Logic\LogicFactory\LogicFactory.cpp" />
+    <ClCompile Include="Source\Engine\GameSystem\Physics\Node\Node.cpp" />
+    <ClCompile Include="Source\Engine\GameSystem\Physics\RigidBody\RigidBody.cpp" />
+    <ClCompile Include="Source\Engine\GameSystem\Physics\Transform\Transform.cpp" />
+    <ClCompile Include="Source\Engine\GameSystem\Physics\World\World.cpp" />
+    <ClCompile Include="Source\Engine\GameSystem\Sound\Audio\Audio.cpp" />
+    <ClCompile Include="Source\Engine\GameSystem\Sound\Sound.cpp" />
+    <ClCompile Include="Source\Engine\GameSystem\Sound\SoundManager\SoundManager.cpp" />
+    <ClCompile Include="Source\Engine\InputManager\InputManager.cpp" />
+    <ClCompile Include="Source\Engine\InputManager\XboxInput.cpp" />
+    <ClCompile Include="Source\Engine\ObjectManager\ObjectManager.cpp" />
+    <ClCompile Include="Source\Engine\ObjectManager\Object\Object.cpp" />
+    <ClCompile Include="Source\Engine\StateManager\GameStateManager\GameStateManager.cpp" />
+    <ClCompile Include="Source\Engine\StateManager\StageFactory\StageFactory.cpp" />
+    <ClCompile Include="Source\Engine\Utilities\Debug\Debug.cpp" />
+    <ClCompile Include="Source\Engine\Utilities\INI\iniReader.cpp" />
+    <ClCompile Include="Source\Engine\Utilities\INI\iniWritter.cpp" />
+    <ClCompile Include="Source\Engine\Utilities\Json\JsonParser.cpp" />
+    <ClCompile Include="Source\Engine\Utilities\Math\MathUtils.cpp" />
+    <ClCompile Include="Source\Engine\Utilities\Math\Matrix\Matrix2x2.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Source\Engine\Utilities\Math\Matrix\Matrix4x4.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Source\Engine\Utilities\Math\Vector\Vector2.cpp" />
+    <ClCompile Include="Source\Engine\Utilities\Math\Vector\Vector3.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Source\Engine\Utilities\Math\Vector\Vector4.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Source\Engine\WinMain.cpp" />
+    <ClCompile Include="Source\Game\GameLogic\Basic\CutScene.cpp" />
+    <ClCompile Include="Source\Game\GameLogic\Environment\Chopper.cpp" />
+    <ClCompile Include="Source\Game\GameLogic\HUD\Grade.cpp" />
+    <ClCompile Include="Source\Game\GameLogic\Menus\Credit.cpp" />
+    <ClCompile Include="Source\Game\GameLogic\Menus\HowToPlayLogic.cpp" />
+    <ClCompile Include="Source\Game\GameLogic\Menus\Setting.cpp" />
+    <ClCompile Include="Source\Game\GameLogic\Environment\Fov.cpp" />
+    <ClCompile Include="Source\Game\GameLogic\HUD\Arrow.cpp" />
+    <ClCompile Include="Source\Game\GameLogic\Basic\BasicControl.cpp" />
+    <ClCompile Include="Source\Game\GameLogic\Basic\FadeScreen.cpp" />
+    <ClCompile Include="Source\Game\GameLogic\HUD\GameOver.cpp" />
+    <ClCompile Include="Source\Game\GameLogic\Menus\MainScreen.cpp" />
+    <ClCompile Include="Source\Game\GameLogic\Environment\NodeSettor.cpp" />
+    <ClCompile Include="Source\Game\GameLogic\Menus\Splash.cpp" />
+    <ClCompile Include="Source\Game\GameLogic\Player\Slow.cpp" />
+    <ClCompile Include="Source\Game\GameLogic\Trap\Alarm.cpp" />
+    <ClCompile Include="Source\Game\GameLogic\Tutorial\Tutorial.cpp" />
+    <ClCompile Include="Source\Game\GameLogic\Enemy\Damage.cpp" />
+    <ClCompile Include="Source\Game\GameLogic\Enemy\Enemy.cpp" />
+    <ClCompile Include="Source\Game\GameLogic\Environment\Door.cpp" />
+    <ClCompile Include="Source\Game\GameLogic\Environment\OuterWall.cpp" />
+    <ClCompile Include="Source\Game\GameLogic\HUD\HUD.cpp" />
+    <ClCompile Include="Source\Game\GameLogic\Menus\MenuSelect.cpp" />
+    <ClCompile Include="Source\Game\GameLogic\Items\Bullet.cpp" />
+    <ClCompile Include="Source\Game\GameLogic\Items\Target.cpp" />
+    <ClCompile Include="Source\Game\GameLogic\Particle\Normal.cpp" />
+    <ClCompile Include="Source\Game\GameLogic\Particle\ParticleManager.cpp" />
+    <ClCompile Include="Source\Game\GameLogic\Player\SuperPower.cpp" />
+    <ClCompile Include="Source\Game\GameLogic\Player\Player.cpp" />
+    <ClCompile Include="Source\Game\GameLogic\Player\Punch.cpp" />
+    <ClCompile Include="Source\Game\GameLogic\Trap\BasicTrap.cpp" />
+    <ClCompile Include="Source\Game\GameLogic\Trap\Laser.cpp" />
+    <ClCompile Include="Source\Game\GameLogic\Trap\Lightning.cpp" />
+    <ClCompile Include="Source\Game\GameLogic\Trap\Turret.cpp" />
+    <ClCompile Include="Source\Game\GameLogic\Trap\TurretTarget.cpp" />
+    <ClCompile Include="Source\Game\GameLogic\Trap\Web.cpp" />
+    <ClCompile Include="Source\Game\GameStage\CutScene\GameEnding.cpp" />
+    <ClCompile Include="Source\Game\GameStage\CutScene\GameIntro.cpp" />
+    <ClCompile Include="Source\Game\GameStage\InGame\LV5.cpp" />
+    <ClCompile Include="Source\Game\GameStage\Menus\CreditStage.cpp" />
+    <ClCompile Include="Source\Game\GameStage\InGame\LV1.cpp" />
+    <ClCompile Include="Source\Game\GameStage\InGame\LV2.cpp" />
+    <ClCompile Include="Source\Game\GameStage\InGame\LV3.cpp" />
+    <ClCompile Include="Source\Game\GameStage\InGame\LV4.cpp" />
+    <ClCompile Include="Source\Game\GameStage\Menus\HowToPlay.cpp" />
+    <ClCompile Include="Source\Game\GameStage\Menus\MainMenu.cpp" />
+    <ClCompile Include="Source\Game\GameStage\Menus\Pause.cpp" />
+    <ClCompile Include="Source\Game\GameStage\Menus\SettingStage.cpp" />
+    <ClCompile Include="Source\Game\GameStage\Menus\SplashStage.cpp" />
+    <ClCompile Include="Source\Game\GameStage\Tutorial\Tutorials_1.cpp" />
+    <ClCompile Include="Source\Game\GameStage\Tutorial\Tutorials_2.cpp" />
+    <ClCompile Include="Source\Game\GameStage\Tutorial\Tutorials_3.cpp" />
+    <ClCompile Include="Source\Game\GameStage\Tutorial\Tutorials_4.cpp" />
+    <ClCompile Include="Source\Game\GameStage\Tutorial\Tutorials_5.cpp" />
+    <ClCompile Include="Source\Game\GameStage\Tutorial\Tutorials_6.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="GameEngine.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\Data\ArcheType\Environment\Floor.json" />
+    <None Include="Resource\Data\Stages\InGame\LV5.json" />
+    <None Include="Resource\Data\Stages\Menu\Credit.json" />
+    <None Include="Resource\Data\Stages\Menu\HowToPlay.json" />
+    <None Include="Resource\Data\Stages\Menu\Setting.json" />
+    <None Include="Resource\Data\Stages\Tutorial\Tutorials_1.json" />
+    <None Include="Resource\Data\Stages\Tutorial\Tutorials_2.json" />
+    <None Include="Resource\Data\Stages\Tutorial\Tutorial_1.json" />
+    <None Include="Resource\Data\Stages\Tutorial\Tutorial_2.json" />
+    <None Include="Resource\Data\Stages\Tutorial\Tutorial_Foots.json" />
+    <None Include="Resource\Data\Stages\Tutorial\Tutorial_Move.json" />
+    <None Include="Resource\Data\Stages\Tutorial\Tutorial_Play.json" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

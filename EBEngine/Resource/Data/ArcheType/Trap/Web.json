@@ -1,0 +1,14 @@
+{
+	"ArcheType" : [
+		{
+			"ObjectType" : "SPRITE", 
+			"Position" : [ 100, 100, 0 ], "Scale" : [150, 150, 0], "Rotation" : 0,
+			"Projection" : "ORTHOGONAL", "Color" : [1, 1, 1, 1], "Texture" : "Web",
+			"Body" : true, "Response" : false, "Shape" : "BALL",
+			"Logic" : [
+				{ "key" : "WEB", "values" : {} },
+				{ "key" : "DAMAGE", "values" : {""} }
+			]
+		}
+	]
+}

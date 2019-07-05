@@ -1,0 +1,32 @@
+{
+	"Stage" : [
+		{
+			"Background" : [ 0, 0, 0, 0 ],
+      "Camera": [ 0, 0, 100, 0 ],
+      "BGM": "intro"
+		}
+	],
+	
+	"Object" : [
+    {
+      "ArcheType": "NONE",
+       "Component": [
+        {
+          "key": "TRANSFORM",
+          "values": {
+            "Position": [ 0, 0, 0 ],
+            "Scale": [ 1024, 768, 0 ]
+          }
+        },
+        {
+          "key": "SPRITE",
+          "values": {}
+        }
+      ],
+			"Logic" : [
+				{ "key" : "BASIC_CONTROL", "values" : {} },
+			  { "key" : "CUTSCENE", "values" : {} }
+      ]
+		}
+	]
+}

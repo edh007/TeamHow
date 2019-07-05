@@ -1,0 +1,436 @@
+{
+	"Stage" : [
+		{
+			"Background" : [ 0, 0, 0, 0 ],
+			"Camera" : [0, 0, 100, 0 ]
+		}
+	],
+
+  "Object": [
+    {
+      "ArcheType": "MENU",
+      "Component": [
+        {
+          "key": "TRANSFORM",
+          "values": {
+            "Position": [ 17.5, -60, -10 ],
+            "Scale": [ 1, 1, 0 ]
+          }
+        },
+        {
+          "key": "TEXT",
+          "values": {
+            "Text": "50%%"
+          }
+        }
+      ]
+    },
+    {
+      "ArcheType": "NONE",
+      "Logic": [
+        {
+          "key": "SETTING",
+          "values": { }
+        }
+      ]
+    },
+    //{
+    //  "ArcheType": "MENU",
+    //  "Component": [
+    //    {
+    //      "key": "TRANSFORM",
+    //      "values": {
+    //        "Position": [ -300, 70, -10 ],
+    //        "Scale": [ 1, 1, 0 ]
+    //      }
+    //    },
+    //    {
+    //      "key": "TEXT",
+    //      "values": {
+    //        "Color": [ 1, 1, 1, 1 ],
+    //        "Text": "Resolution"
+    //      }
+    //    }
+    //  ]
+    //},
+    //{
+    //  "ArcheType": "MENU",
+    //  "Component": [
+    //    {
+    //      "key": "TRANSFORM",
+    //      "values": {
+    //        "Position": [ -100, 70, -10 ],
+    //        "Scale": [ 240, 50, 0 ]
+    //      }
+    //    },
+    //    {
+    //      "key": "SPRITE",
+    //      "values": {
+    //        "Color": [ 0.2, 0.2, 0.2, 0.5 ],
+    //        "Texture": "rect"
+    //      }
+    //    },
+    //    {
+    //      "key": "RIGIDBODY",
+    //      "values": {
+    //        "Response": false,
+    //        "Move": false
+    //      }
+    //    }
+    //  ],
+    //  "Logic": [
+    //    {
+    //      "key": "MENUSELECT",
+    //      "values": { "Content": "1024X768" }
+    //    }
+    //  ]
+    //},
+    //{
+    //  "ArcheType": "MENU",
+    //  "Component": [
+    //    {
+    //      "key": "TRANSFORM",
+    //      "values": {
+    //        "Position": [ 100, 70, -10 ],
+    //        "Scale": [ 240, 50, 0 ]
+    //      }
+    //    },
+    //    {
+    //      "key": "SPRITE",
+    //      "values": {
+    //        "Color": [ 0.2, 0.2, 0.2, 0.5 ],
+    //        "Texture": "rect"
+    //      }
+    //    },
+    //    {
+    //      "key": "RIGIDBODY",
+    //      "values": {
+    //        "Response": false,
+    //        "Move": false
+    //      }
+    //    }
+    //  ],
+    //  "Logic": [
+    //    {
+    //      "key": "MENUSELECT",
+    //      "values": { "Content": "1280X1024" }
+    //    }
+    //  ]
+    //},
+    //{
+    //  "ArcheType": "MENU",
+    //  "Component": [
+    //    {
+    //      "key": "TRANSFORM",
+    //      "values": {
+    //        "Position": [ 285, 70, -10 ],
+    //        "Scale": [ 240, 50, 0 ]
+    //      }
+    //    },
+    //    {
+    //      "key": "SPRITE",
+    //      "values": {
+    //        "Color": [ 0.2, 0.2, 0.2, 0.5 ],
+    //        "Texture": "rect"
+    //      }
+    //    },
+    //    {
+    //      "key": "RIGIDBODY",
+    //      "values": {
+    //        "Response": false,
+    //        "Move": false
+    //      }
+    //    }
+    //  ],
+    //  "Logic": [
+    //    {
+    //      "key": "MENUSELECT",
+    //      "values": { "Content": "1920X1080" }
+    //    }
+    //  ]
+    //},
+    {
+      "ArcheType": "MENU",
+      "Component": [
+        {
+          "key": "TRANSFORM",
+          "values": {
+            "Position": [ 325, -250, -10 ],
+            "Scale": [ 100, 50, 0 ]
+          }
+        },
+        {
+          "key": "SPRITE",
+          "values": {
+            "Color": [ 0.2, 0.2, 0.2, 0.5 ],
+            "Texture": "rect"
+          }
+        },
+        {
+          "key": "RIGIDBODY",
+          "values": {
+            "Response": false,
+            "Move": false
+          }
+        }
+      ],
+      "Logic": [
+        {
+          "key": "MENUSELECT",
+          "values": { "Content": "BACK" }
+        }
+      ]
+    },
+    {
+      "ArcheType": "MENU",
+      "Component": [
+        {
+          "key": "TRANSFORM",
+          "values": {
+            "Position": [ -300, 5, -10 ],
+            "Scale": [ 1, 1, 0 ]
+          }
+        },
+        {
+          "key": "TEXT",
+          "values": {
+            "Color": [ 1, 1, 1, 1 ],
+            "Text": "FullScreen"
+          }
+        }
+      ]
+    },
+    {
+      "ArcheType": "MENU",
+      "Component": [
+        {
+          "key": "TRANSFORM",
+          "values": {
+            "Position": [ -40, 5, -10 ],
+            "Scale": [ 100, 50, 0 ]
+          }
+        },
+        {
+          "key": "SPRITE",
+          "values": {
+            "Color": [ 0.2, 0.2, 0.2, 0.5 ],
+            "Texture": "rect"
+          }
+        },
+        {
+          "key": "RIGIDBODY",
+          "values": {
+            "Response": false,
+            "Move": false
+          }
+        }
+      ],
+      "Logic": [
+        {
+          "key": "MENUSELECT",
+          "values": { "Content": "ON" }
+        }
+      ]
+    },
+    {
+      "ArcheType": "MENU",
+      "Component": [
+        {
+          "key": "TRANSFORM",
+          "values": {
+            "Position": [ 110, 5, -10 ],
+            "Scale": [ 100, 50, 0 ]
+          }
+        },
+        {
+          "key": "SPRITE",
+          "values": {
+            "Color": [ 0.2, 0.2, 0.2, 0.5 ],
+            "Texture": "rect"
+          }
+        },
+        {
+          "key": "RIGIDBODY",
+          "values": {
+            "Response": false,
+            "Move": false
+          }
+        }
+      ],
+      "Logic": [
+        {
+          "key": "MENUSELECT",
+          "values": { "Content": "OFF" }
+        }
+      ]
+    },
+    {
+      "ArcheType": "MENU",
+      "Component": [
+        {
+          "key": "TRANSFORM",
+          "values": {
+            "Position": [ -300, -60, -10 ],
+            "Scale": [ 1, 1, 0 ]
+          }
+        },
+        {
+          "key": "TEXT",
+          "values": {
+            "Color": [ 1, 1, 1, 1 ],
+            "Text": "Volume"
+          }
+        }
+      ]
+    },
+    {
+      "ArcheType": "MENU",
+      "Component": [
+        {
+          "key": "TRANSFORM",
+          "values": {
+            "Position": [ -40, -60, -10 ],
+            "Scale": [ 60, 50, 0 ]
+          }
+        },
+        {
+          "key": "SPRITE",
+          "values": {
+            "Color": [ 0.2, 0.2, 0.2, 0.5 ],
+            "Texture": "rect"
+          }
+        },
+        {
+          "key": "RIGIDBODY",
+          "values": {
+            "Response": false,
+            "Move": false
+          }
+        }
+      ],
+      "Logic": [
+        {
+          "key": "MENUSELECT",
+          "values": { "Content": "<" }
+        }
+      ]
+    },
+
+    {
+      "ArcheType": "MENU",
+      "Component": [
+        {
+          "key": "TRANSFORM",
+          "values": {
+            "Position": [ 110, -60, -10 ],
+            "Scale": [ 60, 50, 0 ]
+          }
+        },
+        {
+          "key": "SPRITE",
+          "values": {
+            "Color": [ 0.2, 0.2, 0.2, 0.5 ],
+            "Texture": "rect"
+          }
+        },
+        {
+          "key": "RIGIDBODY",
+          "values": {
+            "Response": false,
+            "Move": false
+          }
+        }
+      ],
+      "Logic": [
+        {
+          "key": "MENUSELECT",
+          "values": { "Content": ">" }
+        }
+      ]
+    }
+    //,
+    //{
+    //  "ArcheType": "MENU",
+    //  "Component": [
+    //    {
+    //      "key": "TRANSFORM",
+    //      "values": {
+    //        "Position": [ -300, -125, -10 ],
+    //        "Scale": [ 1, 1, 0 ]
+    //      }
+    //    },
+    //    {
+    //      "key": "TEXT",
+    //      "values": {
+    //        "Color": [ 1, 1, 1, 1 ],
+    //        "Text": "GameData"
+    //      }
+    //    }
+    //  ]
+    //},
+    //{
+    //  "ArcheType": "MENU",
+    //  "Component": [
+    //    {
+    //      "key": "TRANSFORM",
+    //      "values": {
+    //        "Position": [ -40, -125, -10 ],
+    //        "Scale": [ 70, 50, 0 ]
+    //      }
+    //    },
+    //    {
+    //      "key": "SPRITE",
+    //      "values": {
+    //        "Color": [ 0.2, 0.2, 0.2, 0.5 ],
+    //        "Texture": "rect"
+    //      }
+    //    },
+    //    {
+    //      "key": "RIGIDBODY",
+    //      "values": {
+    //        "Response": false,
+    //        "Move": false
+    //      }
+    //    }
+    //  ],
+    //  "Logic": [
+    //    {
+    //      "key": "MENUSELECT",
+    //      "values": { "Content": "Save" }
+    //    }
+    //  ]
+    //},
+    //{
+    //  "ArcheType": "MENU",
+    //  "Component": [
+    //    {
+    //      "key": "TRANSFORM",
+    //      "values": {
+    //        "Position": [ 110, -125, -10 ],
+    //        "Scale": [ 70, 50, 0 ]
+    //      }
+    //    },
+    //    {
+    //      "key": "SPRITE",
+    //      "values": {
+    //        "Color": [ 0.2, 0.2, 0.2, 0.5 ],
+    //        "Texture": "rect"
+    //      }
+    //    },
+    //    {
+    //      "key": "RIGIDBODY",
+    //      "values": {
+    //        "Response": false,
+    //        "Move": false
+    //      }
+    //    }
+    //  ],
+    //  "Logic": [
+    //    {
+    //      "key": "MENUSELECT",
+    //      "values": { "Content": "Load" }
+    //    }
+    //  ]
+    //}
+  ]
+}

@@ -1,0 +1,218 @@
+{
+  "Stage": [
+    {
+      "Background": [ 0, 0, 0, 0 ],
+      "Camera": [ 0, 0, 100, 0 ],
+      "BGM": "InGameBGM"
+    }
+  ],
+  "Object": [
+    {
+      "ArcheType": "PLAYER",
+      "Component": [
+        {
+          "key": "TRANSFORM",
+          "values": {
+            "Position": [ -400, -300, 1 ],
+            "Scale": [ 125, 100, 0 ],
+            "Rotation": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "ArcheType": "NONE",
+      "Logic": [
+        {
+          "key": "BASIC_CONTROL",
+          "values": { }
+        },
+        {
+          "key": "HUD",
+          "values": { }
+        },
+        {
+          "key": "PLAYER_FOV",
+          "values": { }
+        },
+        {
+          "key": "OUTER_WALL",
+          "values": { }
+        },
+        {
+          "key": "FADE",
+          "values": { }
+        },
+        {
+          "key": "PARTICLEMANAGER",
+          "values": { "ParticleType": "RUN" }
+        },
+        {
+          "key": "TUTORIAL",
+          "values": {
+            "Message": [
+              [
+                "Press WASD Key To Move!",
+                [ -400, -250 ],
+                "Manipulation_0"
+              ],
+              [
+                "Press LEFT MOUSE to PUNCH!",
+                [ -72, 248],
+                "Manipulation_1"
+              ]
+            ]
+          }
+        },
+        {
+          "key": "GRADE",
+          "values": {
+            "Kill": 1,
+            "Death": 1,
+            "Time": 30
+          }
+        },
+        {
+          "key": "NODESETTOR",
+          "values": { "Node": [ ] }
+        }
+      ]
+    },
+    {
+      "ArcheType": "NONE",
+      "Logic": [
+        {
+          "key": "PARTICLEMANAGER",
+          "values": { "ParticleType": "PLAYER" }
+        }
+      ]
+    },
+    {
+      "ArcheType": "NONE",
+      "Logic": [
+        {
+          "key": "PARTICLEMANAGER",
+          "values": { "ParticleType": "CHARGING" }
+        }
+      ]
+    },
+    {
+      "ArcheType": "NONE",
+      "Logic": [
+        {
+          "key": "PARTICLEMANAGER",
+          "values": { "ParticleType": "CHARGESHOT" }
+        }
+      ]
+    },
+    {
+      "ArcheType": "NONE",
+      "Component": [
+        {
+          "key": "TRANSFORM",
+          "values": {
+            "Position": [ 0, 0, 1 ],
+            "Scale": [ 1920, 1440, 0 ],
+            "Rotation": 0.0
+          }
+        },
+        {
+          "key": "SPRITE",
+          "values": {
+            "Rotation": 0.0,
+            "Texture": "Military_Background"
+          }
+        }
+      ]
+    },
+    { "ArcheType": "FLOOR" },
+    {
+      "ArcheType": "WALL",
+      "Component": [
+        {
+          "key": "TRANSFORM",
+          "values": {
+            "Position": [ -32, -96, 0 ],
+            "Scale": [ 32, 576, 0 ],
+            "Rotation": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "ArcheType": "ENEMY",
+      "Component": [
+        {
+          "key": "TRANSFORM",
+          "values": {
+            "Position": [ -32, 288, 0 ],
+            "Scale": [ 125, 100, 0 ],
+            "Rotation": 0.0
+          }
+        }
+      ],
+      "Logic": [
+        {
+          "key": "ENEMY",
+          "values": {
+            "PatrolType": "SHUTTLE",
+            "EnemyType": "NORMAL",
+            "Speed": 0,
+            "Point": [ ]
+          }
+        }
+      ]
+    },
+    {
+      "ArcheType": "TARGET",
+      "Component": [
+        {
+          "key": "TRANSFORM",
+          "values": {
+            "Position": [ 64, -320, 0 ],
+            "Scale": [ 50, 50, 0 ],
+            "Rotation": 0.0
+          }
+        },
+        {
+          "key": "SPRITE",
+          "values": {
+            "Rotation": 0.0,
+            "Texture": "Piece_1"
+          }
+        }
+      ]
+    },
+    {
+      "ArcheType": "DOOR",
+      "Component": [
+        {
+          "key": "TRANSFORM",
+          "values": {
+            "Position": [ 416, -320, 0 ],
+            "Scale": [ 50, 50, 0 ],
+            "Rotation": 0.0
+          }
+        }
+      ],
+      "Logic": [
+        {
+          "key": "DOOR",
+          "values": { "Piece": "C1" }
+        }
+      ]
+    },
+    {
+      "ArcheType": "GAMEOVER",
+      "Logic": [
+        {
+          "key": "GAMEOVER",
+          "values": {
+            "ShowTime": 7,
+            "Stage": "Tutorials_2"
+          }
+        }
+      ]
+    }
+  ]
+}

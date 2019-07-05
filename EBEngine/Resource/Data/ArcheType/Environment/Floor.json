@@ -1,0 +1,22 @@
+{
+  "ArcheType": [
+    {
+      "Component": [
+        {
+          "key": "TRANSFORM",
+          "values": {
+            "Position": [ 0, 0, -10 ],
+            "Scale": [ 1024, 768, 0 ]
+          }
+        },
+        {
+          "key": "SPRITE",
+          "values": {
+            "Texture": "Floor",
+            "Color": [ 1, 1, 1, 1 ]
+          }
+        }
+      ]
+    }
+  ]
+}

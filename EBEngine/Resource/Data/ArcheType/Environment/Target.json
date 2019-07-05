@@ -1,0 +1,47 @@
+{
+  "ArcheType": [
+    {
+      "Component": [
+        {
+          "key": "TRANSFORM",
+          "values": {
+            "Position": [ 370, 200, 0 ],
+            "Scale": [ 100, 68, 0 ],
+            "Rotation": 0
+          }
+        },
+        {
+          "key": "SPRITE",
+          "values": {
+            "AniToggle": false,
+            "AniFrame": 1,
+            "AniSpeed": 60,
+            "Color": [ 1, 1, 1, 1 ],
+            "Texture": "Piece_1"
+          }
+        },
+        {
+          "key": "RIGIDBODY",
+          "values": {
+            "Response": false,
+            "Shape": "BOX"
+          }
+        }
+      ],
+      "Logic": [
+        {
+          "key": "TARGET",
+          "values": { }
+        },
+        {
+          "key": "PARTICLEMANAGER",
+          "values": { "ParticleType": "INDICATOR" }
+        },
+        {
+          "key": "ARROW",
+          "values": { }
+        }
+      ]
+    }
+  ]
+}

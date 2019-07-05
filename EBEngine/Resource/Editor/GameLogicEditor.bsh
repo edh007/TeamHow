@@ -1,0 +1,195 @@
+#!/bin/bash
+
+MakeNewLogic()
+{
+  touch $3.h
+  hFile_Contents $1 $2 $3 > $3.h
+  
+  touch $3.cpp
+  CppFile_Contents $1 $2 $3 > $3.cpp
+}
+
+hFile_Contents()
+{
+  time=$(date +%Y/%m/%d)
+  capital=$(echo "${3}" | tr '[:lower:]' '[:upper:]')
+  echo $"/******************************************************************************/
+/*!
+\file   ${3}.h
+\author ${1}
+\par    email: ${2}
+\date   ${time}(yy/mm/dd)
+
+\description
+Contains ${3} logic class, builder class, and headers of member functions.
+*/
+/******************************************************************************/
+#ifndef _${capital}_H_
+#define _${capital}_H_"$'\n'
+
+echo $'#include "../../Engine/GameSystem/Logic/LogicBuilder.h"
+#include "../../../Engine/Utilities/Math/MathUtils.h"\n'
+
+echo "class ${3}Builder : public LogicBuilder
+{
+
+public:
+	${3}Builder() {};
+	virtual ~${3}Builder() {};
+	virtual GameLogic* BuildLogic(Object* Owner, LogicType key) const;
+
+};
+
+class ${3} : public GameLogic
+{
+public:
+
+	${3}(Object* Owner, LogicType key);
+	virtual ~${3}(void) {};
+
+	virtual void Load(const Json::Value& data);
+	virtual void Init(void);
+	virtual void Update(float dt);
+	virtual void Shutdown(void);
+	virtual void Unload(void);
+
+private:
+
+};
+
+#endif // _${capital}_H_"
+}
+
+CppFile_Contents()
+{
+  time=$(date +%Y/%m/%d)
+  capital=$(echo "${3}" | tr '[:lower:]' '[:upper:]')
+  echo "/******************************************************************************/
+/*!
+\file   ${3}.cpp
+\author ${1}
+\par    email: ${2}
+\date   ${time}(yy/mm/dd)
+
+\description
+Contains ${3} logic class, builder class, and bodies of member functions.
+*/
+/******************************************************************************/"
+echo '#include "'"${3}"'.h"'
+echo $'#include "../../BaseData/BaseEnigne.h"\n'
+
+echo "/******************************************************************************/
+/*!
+\brief - ${3}Builder constructor
+\param Owner - Owner of this logic
+\param key - LogicType
+\return new_logic
+*/
+/******************************************************************************/
+GameLogic* ${3}Builder::BuildLogic( Object* Owner, LogicType key) const
+{
+	return new ${3}(Owner, key);
+}
+
+/******************************************************************************/
+/*!
+\brief - ${3} constructor
+\param Owner - Owner of this logic
+\param key - LogicType
+*/
+/******************************************************************************/
+${3}::${3}(Object* Owner, LogicType key)
+: GameLogic(Owner, key)
+{}
+
+/******************************************************************************/
+/*!
+\brief - Load ${3} info
+\param data - json parser
+*/
+/******************************************************************************/
+void ${3}::Load(const Json::Value& /*data*/)
+{
+
+}
+
+/******************************************************************************/
+/*!
+\brief - Initialize ${3} info
+*/
+/******************************************************************************/
+void ${3}::Init(void)
+{
+
+}
+
+/******************************************************************************/
+/*!
+\brief - Update ${3} info
+\param dt - delta time
+*/
+/******************************************************************************/
+void ${3}::Update(float /*dt*/)
+{
+
+}
+
+/******************************************************************************/
+/*!
+\brief - Shutdown ${3} info
+*/
+/******************************************************************************/
+void ${3}::Shutdown(void)
+{
+
+}
+
+/******************************************************************************/
+/*!
+\brief - Unload ${3} info
+*/
+/******************************************************************************/
+void ${3}::Unload(void)
+{
+
+}"
+
+}
+
+valid=0
+
+#echo Type author email stage_name...
+
+if [ "$1" != "" ] 
+then
+  echo Author: $1
+  ((valid++))
+else
+  echo Invalid user name!!
+fi
+
+if [ "$2" != "" ] 
+then
+  echo Mail: $2
+  ((valid++))
+else
+  echo Invalid mail!! 
+fi
+
+if [ "$3" != "" ] 
+then
+  echo Logic: $3
+  ((valid++))
+else
+  echo Invalid stage_name!!
+fi
+
+if [ ${valid} == 3 ]
+then
+  MakeNewLogic $1 $2 $3
+  mv $3.cpp ../../Source/Game/GameLogic
+  mv $3.h ../../Source/Game/GameLogic
+  echo Made a new game logic files successfully!
+else
+  echo Failed to make new game logic files...
+fi

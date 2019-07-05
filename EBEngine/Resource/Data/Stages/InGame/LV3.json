@@ -1,0 +1,415 @@
+{
+  "Stage": [
+    {
+      "Background": [ 0, 0, 0, 0 ],
+      "Camera": [ 0, 0, 100, 0 ],
+      "BGM": "InGameBGM"
+    }
+  ],
+  "Object": [
+    {
+      "ArcheType": "PLAYER",
+      "Component": [
+        {
+          "key": "TRANSFORM",
+          "values": {
+            "Position": [ 400, 300, 1 ],
+            "Scale": [ 125, 100, 0 ],
+            "Rotation": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "ArcheType": "NONE",
+      "Logic": [
+        {
+          "key": "BASIC_CONTROL",
+          "values": { }
+        },
+        {
+          "key": "HUD",
+          "values": { }
+        },
+        {
+          "key": "PLAYER_FOV",
+          "values": { }
+        },
+        {
+          "key": "OUTER_WALL",
+          "values": { }
+        },
+        {
+          "key": "FADE",
+          "values": { }
+        },
+        {
+          "key": "PARTICLEMANAGER",
+          "values": { "ParticleType": "RUN" }
+        },
+        {
+          "key": "GRADE",
+          "values": {
+            "Kill": 7,
+            "Death": 5,
+            "Time": 70
+          }
+        },
+        {
+          "key": "NODESETTOR",
+          "values": {
+            "Node": [
+              [
+                [ 4, 5 ],
+                [ 448, 320 ]
+              ],
+              [
+                [ 3, 5 ],
+                [ 192, 320 ]
+              ],
+              [
+                [ 2, 5 ],
+                [ -32, 320 ]
+              ],
+              [
+                [ 1, 5 ],
+                [ -224, 320 ]
+              ],
+              [
+                [ 0, 5 ],
+                [ -384, 320 ]
+              ],
+              [
+                [ 0, 4 ],
+                [ -384, 192 ]
+              ],
+              [
+                [ 0, 3 ],
+                [ -384, 128 ]
+              ],
+              [
+                [ 0, 2 ],
+                [ -384, 32 ]
+              ],
+              [
+                [ 0, 1 ],
+                [ -384, -160 ]
+              ],
+              [
+                [ 0, 0 ],
+                [ -384, -288 ]
+              ],
+              [
+                [ 1, 0 ],
+                [ -224, -288 ]
+              ],
+              [
+                [ 2, 0 ],
+                [ -32, -288 ]
+              ],
+              [
+                [ 3, 0 ],
+                [ 192, -288 ]
+              ],
+              [
+                [ 4, 0 ],
+                [ 448, -288 ]
+              ],
+              [
+                [ 4, 1 ],
+                [ 448, -160 ]
+              ],
+              [
+                [ 4, 2 ],
+                [ 448, 32 ]
+              ],
+              [
+                [ 4, 3 ],
+                [ 448, 128 ]
+              ],
+              [
+                [ 3, 3 ],
+                [ 192, 128 ]
+              ],
+              [
+                [ 2, 3 ],
+                [ -32, 128 ]
+              ],
+              [
+                [ 2, 2 ],
+                [ -32, 0 ]
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ArcheType": "NONE",
+      "Logic": [
+        {
+          "key": "PARTICLEMANAGER",
+          "values": { "ParticleType": "PLAYER" }
+        }
+      ]
+    },
+    {
+      "ArcheType": "NONE",
+      "Logic": [
+        {
+          "key": "PARTICLEMANAGER",
+          "values": { "ParticleType": "CHARGING" }
+        }
+      ]
+    },
+    {
+      "ArcheType": "NONE",
+      "Logic": [
+        {
+          "key": "PARTICLEMANAGER",
+          "values": { "ParticleType": "CHARGESHOT" }
+        }
+      ]
+    },
+    {
+      "ArcheType": "NONE",
+      "Component": [
+        {
+          "key": "TRANSFORM",
+          "values": {
+            "Position": [ 0, 0, 1 ],
+            "Scale": [ 1920, 1440, 0 ],
+            "Rotation": 0.0
+          }
+        },
+        {
+          "key": "SPRITE",
+          "values": {
+            "Rotation": 0.0,
+            "Texture": "Military_Background"
+          }
+        }
+      ]
+    },
+    { "ArcheType": "FLOOR" },
+    {
+      "ArcheType": "TARGET",
+      "Component": [
+        {
+          "key": "TRANSFORM",
+          "values": {
+            "Position": [ 0, 0, 0 ],
+            "Scale": [ 50, 119, 0 ]
+          }
+        },
+        {
+          "key": "SPRITE",
+          "values": {
+            "Rotation": 0.0,
+            "Texture": "Aim"
+          }
+        }
+      ]
+    },
+    {
+      "ArcheType": "DOOR",
+      "Component": [
+        {
+          "key": "TRANSFORM",
+          "values": {
+            "Position": [ 0, 0, 0 ],
+            "Scale": [ 50, 50, 0 ],
+            "Rotation": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "ArcheType": "GAMEOVER",
+      "Logic": [
+        {
+          "key": "GAMEOVER",
+          "values": {
+            "ShowTime": 7,
+            "Stage": "LV4"
+          }
+        }
+      ]
+    },
+    {
+      "ArcheType": "WALL",
+      "Component": [
+        {
+          "key": "TRANSFORM",
+          "values": {
+            "Position": [ 144, 192, 0 ],
+            "Scale": [ 736, 32, 0 ],
+            "Rotation": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "ArcheType": "WALL",
+      "Component": [
+        {
+          "key": "TRANSFORM",
+          "values": {
+            "Position": [ -224, 0, 0 ],
+            "Scale": [ 32, 384, 0 ],
+            "Rotation": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "ArcheType": "WALL",
+      "Component": [
+        {
+          "key": "TRANSFORM",
+          "values": {
+            "Position": [ 0, -160, 0 ],
+            "Scale": [ 448, 32, 0 ],
+            "Rotation": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "ArcheType": "WALL",
+      "Component": [
+        {
+          "key": "TRANSFORM",
+          "values": {
+            "Position": [ 192, -80, 0 ],
+            "Scale": [ 32, 224, 0 ],
+            "Rotation": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "ArcheType": "ENEMY",
+      "Component": [
+        {
+          "key": "TRANSFORM",
+          "values": {
+            "Position": [ -224, 256, 0 ],
+            "Scale": [ 125, 100, 0 ],
+            "Rotation": 180.0
+          }
+        }
+      ],
+      "Logic": [
+        {
+          "key": "ENEMY",
+          "values": {
+            "PatrolType": "SHUTTLE",
+            "EnemyType": "BULLET",
+            "Speed": 150,
+            "Point": [ ]
+          }
+        }
+      ]
+    },
+    {
+      "ArcheType": "ENEMY",
+      "Component": [
+        {
+          "key": "TRANSFORM",
+          "values": {
+            "Position": [ -224, 352, 0 ],
+            "Scale": [ 125, 100, 0 ],
+            "Rotation": 180.0
+          }
+        }
+      ],
+      "Logic": [
+        {
+          "key": "ENEMY",
+          "values": {
+            "PatrolType": "SHUTTLE",
+            "EnemyType": "BULLET",
+            "Speed": 150,
+            "Point": [ ]
+          }
+        }
+      ]
+    },
+    {
+      "ArcheType": "ENEMY",
+      "Component": [
+        {
+          "key": "TRANSFORM",
+          "values": {
+            "Position": [ -320, 96, 0 ],
+            "Scale": [ 125, 100, 0 ],
+            "Rotation": 270.0
+          }
+        }
+      ],
+      "Logic": [
+        {
+          "key": "ENEMY",
+          "values": {
+            "PatrolType": "SHUTTLE",
+            "EnemyType": "DEFENDER",
+            "Speed": 100,
+            "Point": [ ]
+          }
+        }
+      ]
+    },
+    {
+      "ArcheType": "ENEMY",
+      "Component": [
+        {
+          "key": "TRANSFORM",
+          "values": {
+            "Position": [ -224, -224, 0 ],
+            "Scale": [ 125, 100, 0 ],
+            "Rotation": 180.0
+          }
+        }
+      ],
+      "Logic": [
+        {
+          "key": "ENEMY",
+          "values": {
+            "PatrolType": "SHUTTLE",
+            "EnemyType": "DEFENDER",
+            "Speed": 100,
+            "Point": [
+              [ -300, -250 ],
+              [ 300, -250 ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ArcheType": "ENEMY",
+      "Component": [
+        {
+          "key": "TRANSFORM",
+          "values": {
+            "Position": [ -320, -160, 0 ],
+            "Scale": [ 125, 100, 0 ],
+            "Rotation": 270.0
+          }
+        }
+      ],
+      "Logic": [
+        {
+          "key": "ENEMY",
+          "values": {
+            "PatrolType": "SHUTTLE",
+            "EnemyType": "BULLET",
+            "Speed": 150,
+            "Point": [ ]
+          }
+        }
+      ]
+    }
+  ]
+}

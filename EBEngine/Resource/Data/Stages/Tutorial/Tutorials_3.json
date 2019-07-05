@@ -1,0 +1,379 @@
+{
+  "Stage": [
+    {
+      "Background": [ 0, 0, 0, 0 ],
+      "Camera": [ 0, 0, 100, 0 ],
+      "BGM": "InGameBGM"
+    }
+  ],
+  "Object": [
+    {
+      "ArcheType": "PLAYER",
+      "Component": [
+        {
+          "key": "TRANSFORM",
+          "values": {
+            "Position": [ -400, -300, 1 ],
+            "Scale": [ 125, 100, 0 ],
+            "Rotation": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "ArcheType": "NONE",
+      "Logic": [
+        {
+          "key": "BASIC_CONTROL",
+          "values": { }
+        },
+        {
+          "key": "HUD",
+          "values": { }
+        },
+        {
+          "key": "PLAYER_FOV",
+          "values": { }
+        },
+        {
+          "key": "OUTER_WALL",
+          "values": { }
+        },
+        {
+          "key": "FADE",
+          "values": { }
+        },
+        {
+          "key": "PARTICLEMANAGER",
+          "values": { "ParticleType": "RUN" }
+        },
+        {
+          "key": "GRADE",
+          "values": {
+            "Kill": 4,
+            "Death": 4,
+            "Time": 60
+          }
+        },
+        {
+          "key": "TUTORIAL",
+          "values": {
+            "Message": [
+              [
+                "If you're TOO LOUD, ENEMY WILL COME! CHECK FOOTSTEP MARKER! ENEMY CAN'T FIND YOU!\nYou can check it with FOOTSTEP MARKER!",
+                [ -400, -250 ],
+                "Manipulation_8"
+              ],
+              [
+                "Press right mouse button for 3 SECONDS & Release!",
+                [ -250, 300 ],
+                "Manipulation_5"
+              ]
+            ]
+          }
+        },
+        {
+          "key": "NODESETTOR",
+          "values": {
+            "Node": [
+              [
+                [ 0, 0 ],
+                [ -160, 64 ]
+              ],
+              [
+                [ 0, -1 ],
+                [ -160, -160 ]
+              ],
+              [
+                [ 0, -2 ],
+                [ -160, -288 ]
+              ],
+              [
+                [ 1, 0 ],
+                [ 256, 64 ]
+              ],
+              [
+                [ 1, -2 ],
+                [ 256, -288 ]
+              ],
+              [
+                [ 2, -2 ],
+                [ 448, -288 ]
+              ],
+              [
+                [ 2, 0 ],
+                [ 448, 64 ]
+              ],
+              [
+                [ 2, 1 ],
+                [ 448, 160 ]
+              ],
+              [
+                [ 2, 2 ],
+                [ 448, 288 ]
+              ],
+              [
+                [ 1, 2 ],
+                [ 256, 288 ]
+              ],
+              [
+                [ 0, 2 ],
+                [ -160, 288 ]
+              ],
+              [
+                [ -1, 2 ],
+                [ -224, 288 ]
+              ],
+              [
+                [ -2, 2 ],
+                [ -416, 288 ]
+              ],
+              [
+                [ -2, 1 ],
+                [ -416, 64 ]
+              ],
+              [
+                [ -2, 0 ],
+                [ -416, -288 ]
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ArcheType": "NONE",
+      "Logic": [
+        {
+          "key": "PARTICLEMANAGER",
+          "values": { "ParticleType": "PLAYER" }
+        }
+      ]
+    },
+    {
+      "ArcheType": "NONE",
+      "Logic": [
+        {
+          "key": "PARTICLEMANAGER",
+          "values": { "ParticleType": "CHARGING" }
+        }
+      ]
+    },
+    {
+      "ArcheType": "NONE",
+      "Logic": [
+        {
+          "key": "PARTICLEMANAGER",
+          "values": { "ParticleType": "CHARGESHOT" }
+        }
+      ]
+    },
+    {
+      "ArcheType": "TARGET",
+      "Component": [
+        {
+          "key": "TRANSFORM",
+          "values": {
+            "Position": [ 416, 320, 0 ],
+            "Scale": [ 50, 50, 0 ],
+            "Rotation": 0.0
+          }
+        },
+        {
+          "key": "SPRITE",
+          "values": {
+            "Rotation": 0.0,
+            "Texture": "Piece_3"
+          }
+        }
+      ]
+    },
+    {
+      "ArcheType": "NONE",
+      "Component": [
+        {
+          "key": "TRANSFORM",
+          "values": {
+            "Position": [ 0, 0, 1 ],
+            "Scale": [ 1920, 1440, 0 ],
+            "Rotation": 0.0
+          }
+        },
+        {
+          "key": "SPRITE",
+          "values": {
+            "Rotation": 0.0,
+            "Texture": "Military_Background"
+          }
+        }
+      ]
+    },
+    {
+      "ArcheType": "DOOR",
+      "Component": [
+        {
+          "key": "TRANSFORM",
+          "values": {
+            "Position": [ 416, -288, 0 ],
+            "Scale": [ 50, 50, 0 ],
+            "Rotation": 0.0
+          }
+        }
+      ],
+      "Logic": [
+        {
+          "key": "DOOR",
+          "values": { "Piece": "C3" }
+        }
+      ]
+    },
+    { "ArcheType": "FLOOR" },
+    {
+      "ArcheType": "GAMEOVER",
+      "Logic": [
+        {
+          "key": "GAMEOVER",
+          "values": {
+            "ShowTime": 7,
+            "Stage": "Tutorials_4"
+          }
+        }
+      ]
+    },
+    {
+      "ArcheType": "WALL",
+      "Component": [
+        {
+          "key": "TRANSFORM",
+          "values": {
+            "Position": [ 224, -160, 0 ],
+            "Scale": [ 576, 32, 0 ],
+            "Rotation": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "ArcheType": "WALL",
+      "Component": [
+        {
+          "key": "TRANSFORM",
+          "values": {
+            "Position": [ 32, 160, 0 ],
+            "Scale": [ 512, 32, 0 ],
+            "Rotation": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "ArcheType": "WALL",
+      "Component": [
+        {
+          "key": "TRANSFORM",
+          "values": {
+            "Position": [ -224, -112, 0 ],
+            "Scale": [ 32, 544, 0 ],
+            "Rotation": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "ArcheType": "ENEMY",
+      "Component": [
+        {
+          "key": "TRANSFORM",
+          "values": {
+            "Position": [ -320, 160, 0 ],
+            "Scale": [ 125, 100, 0 ],
+            "Rotation": 90.0
+          }
+        }
+      ],
+      "Logic": [
+        {
+          "key": "ENEMY",
+          "values": {
+            "PatrolType": "SHUTTLE",
+            "EnemyType": "NORMAL",
+            "Speed": 100,
+            "Point": [ ]
+          }
+        }
+      ]
+    },
+    {
+      "ArcheType": "ENEMY",
+      "Component": [
+        {
+          "key": "TRANSFORM",
+          "values": {
+            "Position": [ 160, -96, 0 ],
+            "Scale": [ 125, 100, 0 ],
+            "Rotation": 180.0
+          }
+        }
+      ],
+      "Logic": [
+        {
+          "key": "ENEMY",
+          "values": {
+            "PatrolType": "SHUTTLE",
+            "EnemyType": "NORMAL",
+            "Speed": 250,
+            "Point": [ ]
+          }
+        }
+      ]
+    },
+    {
+      "ArcheType": "ENEMY",
+      "Component": [
+        {
+          "key": "TRANSFORM",
+          "values": {
+            "Position": [ 352, 160, 0 ],
+            "Scale": [ 125, 100, 0 ],
+            "Rotation": 270.0
+          }
+        }
+      ],
+      "Logic": [
+        {
+          "key": "ENEMY",
+          "values": {
+            "PatrolType": "SHUTTLE",
+            "EnemyType": "NORMAL",
+            "Speed": 200,
+            "Point": [ ]
+          }
+        }
+      ]
+    },
+    {
+      "ArcheType": "ENEMY",
+      "Component": [
+        {
+          "key": "TRANSFORM",
+          "values": {
+            "Position": [ 416, -320, 0 ],
+            "Scale": [ 125, 100, 0 ],
+            "Rotation": 270.0
+          }
+        }
+      ],
+      "Logic": [
+        {
+          "key": "ENEMY",
+          "values": {
+            "PatrolType": "SHUTTLE",
+            "EnemyType": "NORMAL",
+            "Speed": 200,
+            "Point": [ ]
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "ArcheType": [
+    {
+      "Component": [
+        {
+          "key": "SPRITE",
+          "values": {
+            "Color": [ 1, 1, 1, 1 ],
+            "Texture": "Wall"
+          }
+        },
+        {
+          "key": "RIGIDBODY",
+          "values": { "Move": false }
+        }
+      ]
+    }
+  ]
+}

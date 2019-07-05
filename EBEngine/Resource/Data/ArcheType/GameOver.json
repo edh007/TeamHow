@@ -1,0 +1,31 @@
+{
+  "ArcheType": [
+    {
+      "Component": [
+        {
+          "key": "TRANSFORM",
+          "values": {
+            "Position": [ -0, 0, 10 ],
+            "Scale": [ 50, 50, 0 ],
+            "Rotation": 0
+          }
+        },
+        {
+          "key": "TEXT",
+          "values": {
+            "Color": [ 1, 1, 1, 1 ]
+          }
+        }
+      ],
+      "Logic": [
+        {
+          "key": "GAMEOVER",
+          "values": {
+            "ShowTime": 3,
+            "Stage": "Menu"
+          }
+        }
+      ]
+    }
+  ]
+}

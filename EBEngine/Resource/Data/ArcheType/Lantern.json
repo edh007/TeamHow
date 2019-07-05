@@ -1,0 +1,28 @@
+{
+  "ArcheType": [
+    {
+      "Component": [
+        {
+          "key": "TRANSFORM",
+          "values": {
+            "Position": [ 1000, 1000, 0 ],
+            "Scale": [ 50, 50, 0 ]
+          }
+        },
+        {
+          "key": "PARTICLE",
+          "values": {
+            "Color": [ 1, 1, 1, 1 ],
+            "Texture": "particle"
+          }
+        }
+      ],
+      "Logic": [
+        {
+          "key": "LANTERN",
+          "values": { }
+        }
+      ]
+    }
+  ]
+}

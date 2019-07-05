@@ -1,0 +1,138 @@
+{
+	"Font" : [
+		{"directory" : "Resource/Font/Font.png"}
+	],
+	
+	"Sound" : [
+	
+	{"key" : "select", "directory" : "Resource/Sound/SFX/select.ogg"},
+	{"key" : "victory", "directory" : "Resource/Sound/SFX/victory.ogg"},
+	{"key" : "chopper", "directory" : "Resource/Sound/SFX/chopper.ogg"},
+	
+	{"key" : "hit1", "directory" : "Resource/Sound/SFX/Enemy/hit1.ogg"},
+    {"key" : "hit2", "directory" : "Resource/Sound/SFX/Enemy/hit2.ogg"},
+    {"key" : "hit3", "directory" : "Resource/Sound/SFX/Enemy/hit3.ogg"},
+    {"key" : "hit4", "directory" : "Resource/Sound/SFX/Enemy/hit4.ogg"},
+	
+	{"key" : "explosion", "directory" : "Resource/Sound/SFX/Enemy/explosion.ogg"},
+	{"key" : "footstep", "directory" : "Resource/Sound/SFX/Player/footstep.ogg"},
+	{"key" : "punch", "directory" : "Resource/Sound/SFX/Player/punch.ogg"},
+	{"key" : "death", "directory" : "Resource/Sound/SFX/Player/death.ogg"},
+	
+	{"key" : "laser", "directory" : "Resource/Sound/SFX/Trap/laser.ogg"},
+	{"key" : "radar", "directory" : "Resource/Sound/SFX/Trap/radar.ogg"},
+	{"key" : "lightning", "directory" : "Resource/Sound/SFX/Trap/lightning.ogg"},
+	
+	{"key" : "MenuBGM", "directory" : "Resource/Sound/BGM/menu_bgm.ogg"},
+	{"key" : "InGameBGM", "directory" : "Resource/Sound/BGM/ingame_bgm.ogg"},
+	{"key" : "GettingItem", "directory" : "Resource/Sound/SFX/Item/GettingItem.ogg"},
+	
+	{"key" : "gunShot", "directory" : "Resource/Sound/SFX/Enemy/gunshot.ogg"},
+	{"key" : "whip", "directory" : "Resource/Sound/SFX/Enemy/whip.ogg"},
+	
+	{"key" : "intro", "directory" : "Resource/Sound/BGM/intro_bgm.ogg"},
+	{"key" : "ending", "directory" : "Resource/Sound/BGM/ending_bgm.ogg"}
+  ],
+	
+	"Texture" : [
+		
+		{"key" : "DigiPen", "directory" : "Resource/Texture/Basic/DigiPen.png"},
+		{"key" : "TeamLogo", "directory" : "Resource/Texture/Basic/TeamLogo.png"},
+		{"key" : "FMOD", "directory" : "Resource/Texture/Basic/fmod.png"},
+    	{"key" : "Black", "directory" : "Resource/Texture/Basic/black.png"},
+		{"key" : "XboxSplash", "directory" : "Resource/Texture/Basic/XboxSplash.png"},	
+		{"key" : "Intro_1", "directory" : "Resource/Texture/Basic/Intro_1.png"},
+		{"key" : "Intro_2", "directory" : "Resource/Texture/Basic/Intro_2.png"},
+		{"key" : "End_1", "directory" : "Resource/Texture/Basic/End_1.png"},
+
+		{"key" : "rect", "directory" : "Resource/Texture/Basic/rect.png"},
+		{"key" : "circle", "directory" : "Resource/Texture/Basic/circle.png"},
+		{"key" : "particle", "directory" : "Resource/Texture/Particle/particle.png"},
+		
+		{"key" : "AreaCircle", "directory" : "Resource/Texture/Particle/AreaCircle.png"},
+		{"key" : "Player_Particle", "directory" : "Resource/Texture/Particle/Particle_Player.png"},
+		{"key" : "Line", "directory" : "Resource/Texture/Particle/line.png"},
+		{"key" : "Line_Circle", "directory" : "Resource/Texture/Particle/line_circle.png"},
+		{"key" : "Rect", "directory" : "Resource/Texture/Particle/rect.png"},
+		{"key" : "Snow", "directory" : "Resource/Texture/Particle/snow.png"},
+		{"key" : "Star", "directory" : "Resource/Texture/Particle/star.png"},
+		{"key" : "Stars", "directory" : "Resource/Texture/Particle/stars.png"},
+		{"key" : "Smoke", "directory" : "Resource/Texture/Particle/smoke.png"},
+		{"key" : "LightningTurret", "directory" : "Resource/Texture/Trap/LightningTurret.png"},
+		{"key" : "LaserTurret", "directory" : "Resource/Texture/Trap/LaserTurret.png"},
+		{"key" : "Radar", "directory" : "Resource/Texture/Trap/Radar.png"},
+		{"key" : "Laser", "directory" : "Resource/Texture/Trap/Laser.png"},
+		{"key" : "Aim", "directory" : "Resource/Texture/Trap/aim.png"},
+		{"key" : "Lightning","directory": "Resource/Texture/Trap/Lightning.png"},
+
+		{"key" : "QuestionMark","directory": "Resource/Texture/UI/QuestionMark.png"},
+		{"key" : "ExclamationMark","directory": "Resource/Texture/UI/ExclamationMark.png"},
+		
+		{"key" : "UI_Needle","directory": "Resource/Texture/UI/UI_Needle.png"},
+		{"key" : "UI_Circle","directory": "Resource/Texture/UI/UI_Circle.png"},
+		{"key" : "UI_Footstep","directory": "Resource/Texture/UI/UI_Footstep.png"},
+		{"key" : "UI_Eye","directory": "Resource/Texture/UI/UI_eye.png"},
+		{"key" : "UI_Qbutton","directory": "Resource/Texture/UI/UI_Qbutton.png"},
+		{"key" : "UI_Spacebutton","directory": "Resource/Texture/UI/UI_Spacebutton.png"},
+		{"key" : "UI_Shiftbutton","directory": "Resource/Texture/UI/UI_Shiftbutton.png"},
+		
+		{"key" : "Menu_Star","directory": "Resource/Texture/UI/Menu_Star.png"},
+		{"key" : "Menu_Background","directory": "Resource/Texture/UI/Menu_Background.png"},
+		{"key" : "Window", "directory": "Resource/Texture/UI/Window.png"},
+		
+		{"key" : "GradeFrame", "directory": "Resource/Texture/UI/GradeFrame.png"},
+		{"key" : "UI_Arrow", "directory": "Resource/Texture/UI/UI_Arrow.png"},
+		{"key" : "Manipulation_1", "directory": "Resource/Texture/UI/Manipulation_1.png"},
+		{"key" : "Manipulation_2","directory": "Resource/Texture/UI/Manipulation_2.png"},
+		{"key" : "Manipulation_3","directory": "Resource/Texture/UI/Manipulation_3.png"},
+		{"key" : "Manipulation_4","directory": "Resource/Texture/UI/Manipulation_4.png"},		
+		{"key" : "Manipulation_5", "directory": "Resource/Texture/UI/Manipulation_5.png"},
+		{"key" : "Manipulation_6","directory": "Resource/Texture/UI/Manipulation_6.png"},
+		{"key" : "Manipulation_7","directory": "Resource/Texture/UI/Manipulation_7.png"},		
+		{"key" : "Manipulation_8", "directory": "Resource/Texture/UI/Manipulation_8.png"},
+		{"key" : "Manipulation_9","directory": "Resource/Texture/UI/Manipulation_9.png"},		
+		{"key" : "Manipulation_0", "directory": "Resource/Texture/UI/Manipulation_0.png"},
+		{"key" : "HowToPlay_1","directory": "Resource/Texture/UI/HowToPlay_1.png"},		
+		{"key" : "HowToPlay_2", "directory": "Resource/Texture/UI/HowToPlay_2.png"},
+		{"key" : "Player_Torso","directory": "Resource/Texture/Player/Player_Torso.png"},
+		{"key" : "Player_Walk","directory": "Resource/Texture/Player/Player_Walk.png"},
+
+		{"key" : "Fov","directory": "Resource/Texture/Enemy/FOV.png"},
+		{"key" : "Web", "directory" : "Resource/Texture/Trap/Web.png"},
+		{"key" : "Enemy_Normal","directory": "Resource/Texture/Enemy/Normal.png"},
+		{"key" : "Enemy_WebShooter","directory": "Resource/Texture/Enemy/WebShooter.png"},
+		{"key" : "Enemy_BulletShooter","directory": "Resource/Texture/Enemy/BulletShooter.png"},
+		{"key" : "Enemy_Defender","directory": "Resource/Texture/Enemy/Defender.png"},	  
+		{"key" : "Enemy_Bomber","directory": "Resource/Texture/Enemy/Bomber.png"},
+    {"key" : "Enemy_Anti","directory": "Resource/Texture/Enemy/Enemy_Anti.png"},
+
+		{"key" : "VIP","directory": "Resource/Texture/Item/VIP.png"},
+		{"key" : "Bullet","directory": "Resource/Texture/Item/Bullet.png"},
+		{"key" : "Arrow", "directory" : "Resource/Texture/Item/Arrow.png"},
+		{"key" : "Analog", "directory" : "Resource/Texture/Item/Analog.png"}, 
+		{"key" : "Goggle", "directory" : "Resource/Texture/Item/Goggle.png"}, 
+		{"key" : "Destination", "directory" : "Resource/Texture/Item/Destination.png"}, 
+		{"key" : "Mark", "directory" : "Resource/Texture/Item/Mark.png"}, 
+		{"key" : "Piece_1", "directory": "Resource/Texture/Item/Piece_1.png"},
+		{"key" : "Piece_2", "directory" : "Resource/Texture/Item/Piece_2.png"},
+		{"key" : "Piece_3", "directory" : "Resource/Texture/Item/Piece_3.png"},
+		{"key" : "Piece_4", "directory" : "Resource/Texture/Item/Piece_4.png"}, 
+		{"key" : "Piece_5", "directory" : "Resource/Texture/Item/Piece_5.png"}, 
+		{"key" : "Piece_6", "directory" : "Resource/Texture/Item/Piece_6.png"}, 
+		{"key" : "Piece_7", "directory" : "Resource/Texture/Item/Piece_7.png"}, 
+		{"key" : "Piece_C2", "directory" : "Resource/Texture/Item/Piece_C2.png"},
+		{"key" : "Piece_C3", "directory" : "Resource/Texture/Item/Piece_C3.png"},
+		{"key" : "Piece_C4", "directory" : "Resource/Texture/Item/Piece_C4.png"}, 
+		{"key" : "Piece_C5", "directory" : "Resource/Texture/Item/Piece_C5.png"}, 
+		{"key" : "Piece_C6", "directory" : "Resource/Texture/Item/Piece_C6.png"}, 
+		{"key" : "Piece_C7", "directory" : "Resource/Texture/Item/Piece_C7.png"}, 
+
+		{"key" : "Floor", "directory" : "Resource/Texture/Environments/Floor.png"},
+		{"key" : "Military_Background", "directory" : "Resource/Texture/Environments/Military_Background.png"},
+		{"key" : "Player_Fov", "directory" : "Resource/Texture/Environments/Player_Fov.png"},
+		{"key" : "Wall", "directory" : "Resource/Texture/Environments/Wall.png"},
+		
+		{"key" : "Propeller", "directory" : "Resource/Texture/Environments/Propeller.png"},
+		{"key" : "Chopper", "directory" : "Resource/Texture/Environments/Hellicopter.png"}
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "ArcheType": [
+    {
+      "Component": [
+        {
+          "key": "TRANSFORM",
+          "values": {
+            "Position": [ 0, 0, 0 ],
+             "Scale": [ 125, 100, 0 ]
+          }
+        },
+        {
+          "key": "SPRITE",
+          "values": {
+            "Color": [ 1, 1, 1, 1 ],
+            "Texture": "Enemy_Normal"
+          }
+        },
+        {
+          "key": "RIGIDBODY",
+          "values": {
+            "Response": false,
+            "Shape": "BALL"
+          }
+        }
+      ],
+      "Logic": [
+        {
+          "key": "DAMAGE",
+          "values": {
+            "Life": 1,
+            "Damage": 1
+          }
+        },
+        {
+          "key": "SLOW",
+          "values": { }
+        },
+        {
+          "key": "PARTICLEMANAGER",
+          "values": { "ParticleType": "RADAR" }
+        }
+      ]
+    }
+  ]
+}

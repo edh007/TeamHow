@@ -1,0 +1,47 @@
+{
+  "ArcheType": [
+    {
+      "Component": [
+
+        {
+          "key": "SPRITE",
+          "values": {
+            "Color": [ 1, 1, 1, 1 ],
+            "Texture": "LaserTurret",
+            "AniFrame": 2
+          }
+        },
+        {
+          "key": "RIGIDBODY",
+          "values": {
+            "Response": false,
+            "Shape": "BOX"
+          }
+        }
+      ],
+      "Logic": [
+        {
+          "key": "TRAP",
+          "values": {
+            "WaitingTime": 5,
+            "RunningTime": 5
+          }
+        },
+        {
+          "key": "SLOW",
+          "values": { }
+        },
+        {
+          "key": "PARTICLEMANAGER",
+          "values": { "ParticleType": "LASER" }
+        },
+        {
+          "key": "LASER",
+          "values": {
+            "Range":  "200"
+          }
+        }
+      ]
+    }
+  ]
+}

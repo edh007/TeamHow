@@ -1,0 +1,47 @@
+{
+  "ArcheType": [
+    {
+      "Component": [
+        {
+          "key": "TRANSFORM",
+          "values": {
+            "Position": [ 0, 0, 1 ],
+            "Scale": [ 125, 100, 0 ]
+          }
+        },
+        {
+          "key": "SPRITE",
+          "values": {
+            "Color": [ 1, 1, 1, 1 ],
+            "Texture": "Player_Torso",
+            "AniFrame": 10,
+            "AniSpeed" : 25
+          }
+        },
+        {
+          "key": "RIGIDBODY",
+          "values": { "Shape" : "BALL" }
+        }
+      ],
+      "Logic": [
+        {
+          "key": "PLAYER",
+          "values": { "Speed": 75 }
+        },
+        {
+          "key": "SUPERPOWER",
+          "values": {}
+        },
+        {
+          "key": "SLOW",
+          "values": { }
+        },
+
+        {
+          "key": "PARTICLEMANAGER",
+          "values": { "ParticleType": "BLOW" }
+        }
+      ]
+    }
+  ]
+}
